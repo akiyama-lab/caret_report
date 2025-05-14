@@ -1,5 +1,9 @@
 {
-  "ignore_topic_list": ["/tf", "/tf_static", "/diagnostics"],
+  "ignore_topic_list": [
+    "/tf",
+    "/tf_static",
+    "/diagnostics"
+  ],
   "ignore_node_list": [
     "/_ros2cli_/*",
     "/launch_ros_*",
@@ -9,7 +13,10 @@
   "target_path_list": [
     {
       "name": "component_sensing",
-      "path": ["/sensing/lidar/top/velodyne_ros_wrapper_node", "/sensing/lidar/concatenate_data"],
+      "path": [
+        "/sensing/lidar/top/velodyne_ros_wrapper_node",
+        "/sensing/lidar/concatenate_data"
+      ],
       "include_first_callback": false
     },
     {
@@ -61,7 +68,10 @@
       "name": "component_control",
       "path": [
         "/control/trajectory_follower/controller_node_exe",
-        ["/control/vehicle_cmd_gate", "/control/trajectory_follower/control_cmd"]
+        [
+          "/control/vehicle_cmd_gate",
+          "/control/trajectory_follower/control_cmd"
+        ]
       ]
     },
     {
@@ -97,7 +107,10 @@
         [
           "/planning/planning_validator",
           "/control/trajectory_follower/controller_node_exe",
-          ["/control/vehicle_cmd_gate", "/control/trajectory_follower/control_cmd"]
+          [
+            "/control/vehicle_cmd_gate",
+            "/control/trajectory_follower/control_cmd"
+          ]
         ]
       ],
       "include_first_callback": false
@@ -135,7 +148,10 @@
         [
           "/planning/planning_validator",
           "/control/trajectory_follower/controller_node_exe",
-          ["/control/vehicle_cmd_gate", "/control/trajectory_follower/control_cmd"]
+          [
+            "/control/vehicle_cmd_gate",
+            "/control/trajectory_follower/control_cmd"
+          ]
         ]
       ]
     }
