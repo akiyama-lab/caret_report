@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/top/self_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/top/crop_box_filter_self
+  subscribe_node_name: /sensing/lidar/top/crop_box_filter_mirror
+  filename: PERIOD_sensing_lidar_top_self_cropped_pointcloud_ex_0_sensing_lidar_top_crop_box_filter_mirror
+  avg: 498.514
+  std: 100.647
+  min: 27.444
+  max: 705.553
+  p50: 511.190
+  p95: 592.193
+  p99: 644.404

@@ -1,0 +1,11 @@
+- topic_name: /system/component_state_monitor/component/launch/vehicle
+  publish_node_name: /system/component_state_monitor/component
+  subscribe_node_name: /adapi/node/autoware_state
+  filename: LATENCY_system_component_state_monitor_component_launch_vehicle_0_adapi_node_autoware_state
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

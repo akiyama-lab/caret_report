@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/camera6/classification/car/traffic_signals
+  publish_node_name: /perception/traffic_light_recognition/camera6/classification/car_traffic_light_classifier
+  subscribe_node_name: /perception/traffic_light_recognition/camera6/classification/traffic_light_occlusion_predictor
+  filename: LATENCY_perception_traffic_light_recognition_camera6_classification_car_traffic_signals_0_perception_traffic_light_recog
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

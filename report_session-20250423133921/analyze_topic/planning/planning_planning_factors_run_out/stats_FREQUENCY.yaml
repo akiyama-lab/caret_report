@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/run_out
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: FREQUENCY_planning_planning_factors_run_out_0_adapi_node_planning
+  avg: 1.957
+  std: 0.603
+  min: 0.000
+  max: 3.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.000

@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/obstacle_stop
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_obstacle_stop_0_adapi_node_planning
+  avg: 0.191
+  std: 0.105
+  min: 0.042
+  max: 0.526
+  p50: 0.166
+  p95: 0.403
+  p99: 0.507

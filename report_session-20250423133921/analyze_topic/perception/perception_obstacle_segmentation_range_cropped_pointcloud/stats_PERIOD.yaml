@@ -1,0 +1,11 @@
+- topic_name: /perception/obstacle_segmentation/range_cropped/pointcloud
+  publish_node_name: /perception/obstacle_segmentation/crop_box_filter
+  subscribe_node_name: /perception/obstacle_segmentation/common_ground_filter
+  filename: PERIOD_perception_obstacle_segmentation_range_cropped_pointcloud_0_perception_obstacle_segmentation_common_ground_filter
+  avg: 498.519
+  std: 90.732
+  min: 19.951
+  max: 713.500
+  p50: 508.574
+  p95: 597.538
+  p99: 624.243

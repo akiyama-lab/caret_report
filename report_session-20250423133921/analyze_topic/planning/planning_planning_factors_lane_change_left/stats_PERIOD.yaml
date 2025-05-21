@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/lane_change_left
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_lane_change_left_0_adapi_node_planning
+  avg: 499.801
+  std: 37.785
+  min: 406.215
+  max: 602.636
+  p50: 505.592
+  p95: 575.897
+  p99: 592.383

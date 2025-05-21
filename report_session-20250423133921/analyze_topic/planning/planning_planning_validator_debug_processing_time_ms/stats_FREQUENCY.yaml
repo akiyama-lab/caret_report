@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_validator/debug/processing_time_ms
+  publish_node_name: /planning/planning_validator
+  subscribe_node_name: /system/processing_time_checker
+  filename: FREQUENCY_planning_planning_validator_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 1.989
+  std: 0.401
+  min: 0.000
+  max: 4.000
+  p50: 2.000
+  p95: 2.000
+  p99: 3.070

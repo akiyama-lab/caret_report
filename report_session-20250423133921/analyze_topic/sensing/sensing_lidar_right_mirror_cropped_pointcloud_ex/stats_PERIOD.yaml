@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/mirror_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/right/crop_box_filter_mirror
+  subscribe_node_name: /sensing/lidar/right/distortion_corrector_node
+  filename: PERIOD_sensing_lidar_right_mirror_cropped_pointcloud_ex_0_sensing_lidar_right_distortion_corrector_node
+  avg: 498.730
+  std: 34.602
+  min: 133.534
+  max: 564.900
+  p50: 505.569
+  p95: 555.325
+  p99: 561.150

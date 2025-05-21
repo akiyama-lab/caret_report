@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/pointcloud_raw_ex
+  publish_node_name: /sensing/lidar/right/velodyne_ros_wrapper_node
+  subscribe_node_name: /sensing/lidar/right/crop_box_filter_self
+  filename: LATENCY_sensing_lidar_right_pointcloud_raw_ex_0_sensing_lidar_right_crop_box_filter_self
+  avg: 0.090
+  std: 0.118
+  min: 0.010
+  max: 0.902
+  p50: 0.055
+  p95: 0.322
+  p99: 0.567

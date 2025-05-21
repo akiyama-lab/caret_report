@@ -1,0 +1,11 @@
+- topic_name: /localization/initialization_state
+  publish_node_name: /localization/util/pose_initializer
+  subscribe_node_name: /adapi/node/localization
+  filename: FREQUENCY_localization_initialization_state_0_adapi_node_localization
+  avg: 0.500
+  std: 0.837
+  min: 0.000
+  max: 2.000
+  p50: 0.000
+  p95: 1.750
+  p99: 1.950

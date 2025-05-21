@@ -1,0 +1,11 @@
+- topic_name: /planning/mission_planning/route_selector/main/route
+  publish_node_name: /planning/mission_planning/route_selector
+  subscribe_node_name: /adapi/node/routing
+  filename: FREQUENCY_planning_mission_planning_route_selector_main_route_0_adapi_node_routing
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

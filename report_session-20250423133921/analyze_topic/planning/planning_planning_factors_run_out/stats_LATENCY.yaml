@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/run_out
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_run_out_0_adapi_node_planning
+  avg: 0.133
+  std: 0.092
+  min: 0.026
+  max: 0.517
+  p50: 0.114
+  p95: 0.301
+  p99: 0.437

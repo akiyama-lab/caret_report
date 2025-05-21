@@ -1,0 +1,11 @@
+- topic_name: /planning/mission_planning/state
+  publish_node_name: /planning/mission_planning/mission_planner
+  subscribe_node_name: /planning/mission_planning/route_selector
+  filename: PERIOD_planning_mission_planning_state_0_planning_mission_planning_route_selector
+  avg: 17995.574
+  std: 25449.015
+  min: 0.403
+  max: 35990.746
+  p50: 17995.574
+  p95: 34191.229
+  p99: 35630.842

@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/velocity_smoother/trajectory
+  publish_node_name: /planning/scenario_planning/velocity_smoother
+  subscribe_node_name: /planning/planning_validator
+  filename: FREQUENCY_planning_scenario_planning_velocity_smoother_trajectory_0_planning_planning_validator
+  avg: 1.989
+  std: 0.518
+  min: 0.000
+  max: 4.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.070

@@ -1,0 +1,11 @@
+- topic_name: /system/emergency/hazard_lights_cmd
+  publish_node_name: /system/mrm_handler
+  subscribe_node_name: /control/vehicle_cmd_gate
+  filename: PERIOD_system_emergency_hazard_lights_cmd_0_control_vehicle_cmd_gate
+  avg: 499.900
+  std: 36.658
+  min: 397.558
+  max: 595.609
+  p50: 507.359
+  p95: 571.928
+  p99: 592.666

@@ -1,0 +1,11 @@
+- topic_name: /control/control_validator/debug/processing_time_ms
+  publish_node_name: /control/control_validator
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_control_control_validator_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 150.040
+  std: 20.478
+  min: 35.911
+  max: 267.839
+  p50: 152.323
+  p95: 162.175
+  p99: 221.622

@@ -1,0 +1,11 @@
+- topic_name: /planning/mission_planning/mission_planner/debug/processing_time_ms
+  publish_node_name: /planning/mission_planning/mission_planner
+  subscribe_node_name: /system/processing_time_checker
+  filename: FREQUENCY_planning_mission_planning_mission_planner_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 0.143
+  std: 0.378
+  min: 0.000
+  max: 1.000
+  p50: 0.000
+  p95: 0.700
+  p99: 0.940

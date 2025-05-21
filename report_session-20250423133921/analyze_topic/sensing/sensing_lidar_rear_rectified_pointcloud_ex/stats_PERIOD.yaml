@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/rear/rectified/pointcloud_ex
+  publish_node_name: /sensing/lidar/rear/distortion_corrector_node
+  subscribe_node_name: /sensing/lidar/rear/ring_outlier_filter
+  filename: PERIOD_sensing_lidar_rear_rectified_pointcloud_ex_0_sensing_lidar_rear_ring_outlier_filter
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

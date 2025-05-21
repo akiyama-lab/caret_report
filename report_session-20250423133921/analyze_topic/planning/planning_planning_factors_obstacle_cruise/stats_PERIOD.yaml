@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/obstacle_cruise
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_obstacle_cruise_0_adapi_node_planning
+  avg: 499.378
+  std: 39.784
+  min: 396.764
+  max: 619.629
+  p50: 502.867
+  p95: 577.024
+  p99: 593.172

@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/rear/mirror_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/rear/crop_box_filter_mirror
+  subscribe_node_name: /sensing/lidar/rear/distortion_corrector_node
+  filename: LATENCY_sensing_lidar_rear_mirror_cropped_pointcloud_ex_0_sensing_lidar_rear_distortion_corrector_node
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

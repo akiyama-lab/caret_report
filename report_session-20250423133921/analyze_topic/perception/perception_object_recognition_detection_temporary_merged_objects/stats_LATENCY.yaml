@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/temporary_merged_objects
+  publish_node_name: /perception/object_recognition/detection/object_association_merger_alpha
+  subscribe_node_name: /perception/object_recognition/detection/object_association_merger_beta
+  filename: LATENCY_perception_object_recognition_detection_temporary_merged_objects_0_perception_object_recognition_detection_objec
+  avg: 0.513
+  std: 0.360
+  min: 0.105
+  max: 2.127
+  p50: 0.443
+  p95: 1.226
+  p99: 1.591

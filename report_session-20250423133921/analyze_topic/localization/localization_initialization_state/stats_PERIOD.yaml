@@ -1,0 +1,11 @@
+- topic_name: /localization/initialization_state
+  publish_node_name: /localization/util/pose_initializer
+  subscribe_node_name: /adapi/node/localization
+  filename: PERIOD_localization_initialization_state_0_adapi_node_localization
+  avg: '---'
+  std: '---'
+  min: 2.954
+  max: 2.954
+  p50: '---'
+  p95: '---'
+  p99: '---'

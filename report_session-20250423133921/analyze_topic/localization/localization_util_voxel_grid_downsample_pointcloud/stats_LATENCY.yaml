@@ -1,0 +1,11 @@
+- topic_name: /localization/util/voxel_grid_downsample/pointcloud
+  publish_node_name: /localization/util/voxel_grid_downsample_filter
+  subscribe_node_name: /localization/util/random_downsample_filter
+  filename: LATENCY_localization_util_voxel_grid_downsample_pointcloud_0_localization_util_random_downsample_filter
+  avg: 0.072
+  std: 0.070
+  min: 0.016
+  max: 0.624
+  p50: 0.053
+  p95: 0.197
+  p99: 0.374

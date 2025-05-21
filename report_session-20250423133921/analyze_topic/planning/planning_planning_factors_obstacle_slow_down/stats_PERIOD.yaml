@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/obstacle_slow_down
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_obstacle_slow_down_0_adapi_node_planning
+  avg: 499.379
+  std: 39.758
+  min: 397.345
+  max: 619.031
+  p50: 502.783
+  p95: 577.317
+  p99: 593.168

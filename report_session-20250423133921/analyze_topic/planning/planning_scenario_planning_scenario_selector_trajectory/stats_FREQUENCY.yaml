@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/scenario_selector/trajectory
+  publish_node_name: /planning/scenario_planning/scenario_selector
+  subscribe_node_name: /planning/scenario_planning/velocity_smoother
+  filename: FREQUENCY_planning_scenario_planning_scenario_selector_trajectory_0_planning_scenario_planning_velocity_smoother
+  avg: 2.011
+  std: 0.344
+  min: 1.000
+  max: 3.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.000

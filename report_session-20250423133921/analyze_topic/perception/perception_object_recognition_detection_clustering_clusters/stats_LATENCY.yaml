@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/clustering/clusters
+  publish_node_name: /perception/object_recognition/detection/clustering/euclidean_cluster
+  subscribe_node_name: /perception/object_recognition/detection/clustering/shape_estimation
+  filename: LATENCY_perception_object_recognition_detection_clustering_clusters_0_perception_object_recognition_detection_clustering
+  avg: 0.952
+  std: 0.590
+  min: 0.231
+  max: 4.029
+  p50: 0.874
+  p95: 2.002
+  p99: 2.620

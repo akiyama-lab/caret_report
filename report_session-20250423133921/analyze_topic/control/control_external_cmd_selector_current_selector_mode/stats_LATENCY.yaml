@@ -1,0 +1,11 @@
+- topic_name: /control/external_cmd_selector/current_selector_mode
+  publish_node_name: /control/external_cmd_selector
+  subscribe_node_name: /control/autoware_operation_mode_transition_manager
+  filename: LATENCY_control_external_cmd_selector_current_selector_mode_0_control_autoware_operation_mode_transition_manager
+  avg: 1.178
+  std: 0.891
+  min: 0.125
+  max: 4.766
+  p50: 1.023
+  p95: 3.067
+  p99: 4.583

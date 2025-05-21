@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/top/pointcloud_before_sync
+  publish_node_name: /sensing/lidar/top/ring_outlier_filter
+  subscribe_node_name: /sensing/lidar/concatenate_data
+  filename: FREQUENCY_sensing_lidar_top_pointcloud_before_sync_0_sensing_lidar_concatenate_data
+  avg: 2.007
+  std: 0.397
+  min: 1.000
+  max: 3.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.000

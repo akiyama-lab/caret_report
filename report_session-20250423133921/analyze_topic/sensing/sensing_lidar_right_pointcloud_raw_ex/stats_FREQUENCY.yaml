@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/pointcloud_raw_ex
+  publish_node_name: /sensing/lidar/right/velodyne_ros_wrapper_node
+  subscribe_node_name: /sensing/lidar/right/crop_box_filter_self
+  filename: FREQUENCY_sensing_lidar_right_pointcloud_raw_ex_0_sensing_lidar_right_crop_box_filter_self
+  avg: 2.007
+  std: 0.567
+  min: 1.000
+  max: 3.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.000

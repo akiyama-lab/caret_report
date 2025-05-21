@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/camera6/detection/rough/rois
+  publish_node_name: /perception/traffic_light_recognition/camera6/detection/traffic_light_map_based_detector
+  subscribe_node_name: /perception/traffic_light_recognition/camera6/detection/traffic_light_fine_detector
+  filename: PERIOD_perception_traffic_light_recognition_camera6_detection_rough_rois_0_perception_traffic_light_recognition_camera6_
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

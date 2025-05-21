@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/lane_driving/behavior_planning/path
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  subscribe_node_name: /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  filename: FREQUENCY_planning_scenario_planning_lane_driving_behavior_planning_path_0_planning_scenario_planning_lane_driving_motio
+  avg: 2.011
+  std: 0.497
+  min: 1.000
+  max: 3.000
+  p50: 2.000
+  p95: 3.000
+  p99: 3.000

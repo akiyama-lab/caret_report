@@ -1,0 +1,11 @@
+- topic_name: /planning/mission_planning/state
+  publish_node_name: /planning/mission_planning/mission_planner
+  subscribe_node_name: /planning/mission_planning/route_selector
+  filename: FREQUENCY_planning_mission_planning_state_0_planning_mission_planning_route_selector
+  avg: 0.070
+  std: 0.338
+  min: 0.000
+  max: 2.000
+  p50: 0.000
+  p95: 0.000
+  p99: 1.580

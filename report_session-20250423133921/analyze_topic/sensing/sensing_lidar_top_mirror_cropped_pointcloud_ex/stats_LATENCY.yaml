@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/top/mirror_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/top/crop_box_filter_mirror
+  subscribe_node_name: /sensing/lidar/top/distortion_corrector_node
+  filename: LATENCY_sensing_lidar_top_mirror_cropped_pointcloud_ex_0_sensing_lidar_top_distortion_corrector_node
+  avg: 0.288
+  std: 2.199
+  min: 0.011
+  max: 22.041
+  p50: 0.037
+  p95: 0.113
+  p99: 4.229

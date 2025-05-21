@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/parking/is_completed
+  publish_node_name: /planning/scenario_planning/parking/freespace_planner
+  subscribe_node_name: /planning/scenario_planning/scenario_selector
+  filename: FREQUENCY_planning_scenario_planning_parking_is_completed_0_planning_scenario_planning_scenario_selector
+  avg: 2.014
+  std: 0.116
+  min: 2.000
+  max: 3.000
+  p50: 2.000
+  p95: 2.000
+  p99: 2.540

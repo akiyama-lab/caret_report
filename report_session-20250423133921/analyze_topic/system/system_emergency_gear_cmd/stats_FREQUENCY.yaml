@@ -1,0 +1,11 @@
+- topic_name: /system/emergency/gear_cmd
+  publish_node_name: /system/mrm_handler
+  subscribe_node_name: /control/vehicle_cmd_gate
+  filename: FREQUENCY_system_emergency_gear_cmd_0_control_vehicle_cmd_gate
+  avg: 2.007
+  std: 0.143
+  min: 1.000
+  max: 3.000
+  p50: 2.000
+  p95: 2.000
+  p99: 2.540
