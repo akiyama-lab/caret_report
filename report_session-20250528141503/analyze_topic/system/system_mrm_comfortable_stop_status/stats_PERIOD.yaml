@@ -1,0 +1,11 @@
+- topic_name: /system/mrm/comfortable_stop/status
+  publish_node_name: /system/mrm_comfortable_stop_operator
+  subscribe_node_name: /system/mrm_handler
+  filename: PERIOD_system_mrm_comfortable_stop_status_0_system_mrm_handler
+  avg: 99.581
+  std: 9.226
+  min: 9.158
+  max: 120.378
+  p50: 101.458
+  p95: 114.159
+  p99: 119.268

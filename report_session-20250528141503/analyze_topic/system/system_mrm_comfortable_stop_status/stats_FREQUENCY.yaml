@@ -1,0 +1,11 @@
+- topic_name: /system/mrm/comfortable_stop/status
+  publish_node_name: /system/mrm_comfortable_stop_operator
+  subscribe_node_name: /system/mrm_handler
+  filename: FREQUENCY_system_mrm_comfortable_stop_status_0_system_mrm_handler
+  avg: 10.071
+  std: 0.378
+  min: 10.000
+  max: 12.000
+  p50: 10.000
+  p95: 10.000
+  p99: 11.460

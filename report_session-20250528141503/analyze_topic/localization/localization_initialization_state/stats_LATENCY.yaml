@@ -1,0 +1,11 @@
+- topic_name: /localization/initialization_state
+  publish_node_name: /localization/util/pose_initializer
+  subscribe_node_name: /adapi/node/localization
+  filename: LATENCY_localization_initialization_state_0_adapi_node_localization
+  avg: 2.285
+  std: 2.956
+  min: 0.195
+  max: 4.374
+  p50: 2.285
+  p95: 4.165
+  p99: 4.333

@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/pointcloud_raw_ex
+  publish_node_name: /sensing/lidar/right/velodyne_ros_wrapper_node
+  subscribe_node_name: /sensing/lidar/right/crop_box_filter_self
+  filename: PERIOD_sensing_lidar_right_pointcloud_raw_ex_0_sensing_lidar_right_crop_box_filter_self
+  avg: 99.796
+  std: 6.454
+  min: 47.014
+  max: 113.876
+  p50: 101.011
+  p95: 111.255
+  p99: 112.739

@@ -1,0 +1,11 @@
+- topic_name: /sensing/gnss/pose_with_covariance
+  publish_node_name: /sensing/gnss/gnss_poser
+  subscribe_node_name: /localization/util/pose_initializer
+  filename: PERIOD_sensing_gnss_pose_with_covariance_0_localization_util_pose_initializer
+  avg: 999.764
+  std: 9.585
+  min: 985.704
+  max: 1014.973
+  p50: 998.009
+  p95: 1014.681
+  p99: 1014.913

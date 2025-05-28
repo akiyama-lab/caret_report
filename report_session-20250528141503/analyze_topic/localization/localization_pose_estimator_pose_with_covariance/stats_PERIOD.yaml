@@ -1,0 +1,11 @@
+- topic_name: /localization/pose_estimator/pose_with_covariance
+  publish_node_name: /localization/pose_estimator/ndt_scan_matcher
+  subscribe_node_name: /localization/pose_twist_fusion_filter/ekf_localizer
+  filename: PERIOD_localization_pose_estimator_pose_with_covariance_0_localization_pose_twist_fusion_filter_ekf_localizer
+  avg: 100.777
+  std: 37.621
+  min: 6.189
+  max: 253.632
+  p50: 99.136
+  p95: 159.593
+  p99: 231.115

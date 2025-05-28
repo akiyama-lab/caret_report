@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/objects_before_filter
+  publish_node_name: /perception/object_recognition/detection/object_association_merger_beta
+  subscribe_node_name: /perception/object_recognition/detection/object_lanelet_filter
+  filename: PERIOD_perception_object_recognition_detection_objects_before_filter_0_perception_object_recognition_detection_object_la
+  avg: 99.600
+  std: 43.065
+  min: 9.010
+  max: 252.478
+  p50: 97.690
+  p95: 174.181
+  p99: 208.365

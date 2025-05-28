@@ -1,0 +1,11 @@
+- topic_name: /sensing/gnss/pose_with_covariance
+  publish_node_name: /sensing/gnss/gnss_poser
+  subscribe_node_name: /localization/util/pose_initializer
+  filename: FREQUENCY_sensing_gnss_pose_with_covariance_0_localization_util_pose_initializer
+  avg: 1.037
+  std: 0.649
+  min: 0.000
+  max: 2.000
+  p50: 1.000
+  p95: 2.000
+  p99: 2.000

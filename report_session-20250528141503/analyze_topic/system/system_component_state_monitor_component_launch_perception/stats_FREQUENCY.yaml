@@ -1,0 +1,11 @@
+- topic_name: /system/component_state_monitor/component/launch/perception
+  publish_node_name: /system/component_state_monitor/component
+  subscribe_node_name: /adapi/node/autoware_state
+  filename: FREQUENCY_system_component_state_monitor_component_launch_perception_0_adapi_node_autoware_state
+  avg: 0.500
+  std: 0.707
+  min: 0.000
+  max: 1.000
+  p50: 0.500
+  p95: 0.950
+  p99: 0.990

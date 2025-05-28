@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/rear/pointcloud_raw_ex
+  publish_node_name: /sensing/lidar/rear/velodyne_ros_wrapper_node
+  subscribe_node_name: /sensing/lidar/rear/crop_box_filter_self
+  filename: LATENCY_sensing_lidar_rear_pointcloud_raw_ex_0_sensing_lidar_rear_crop_box_filter_self
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

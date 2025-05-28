@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/self_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/right/crop_box_filter_self
+  subscribe_node_name: /sensing/lidar/right/crop_box_filter_mirror
+  filename: LATENCY_sensing_lidar_right_self_cropped_pointcloud_ex_0_sensing_lidar_right_crop_box_filter_mirror
+  avg: 0.099
+  std: 0.678
+  min: 0.013
+  max: 8.686
+  p50: 0.027
+  p95: 0.133
+  p99: 0.361

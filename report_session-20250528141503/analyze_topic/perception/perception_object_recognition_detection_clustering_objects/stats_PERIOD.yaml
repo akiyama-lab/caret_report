@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/clustering/objects
+  publish_node_name: /perception/object_recognition/detection/clustering/detected_object_feature_remover
+  subscribe_node_name: /perception/object_recognition/detection/object_association_merger_alpha
+  filename: PERIOD_perception_object_recognition_detection_clustering_objects_0_perception_object_recognition_detection_object_assoc
+  avg: 99.407
+  std: 43.143
+  min: 8.487
+  max: 251.881
+  p50: 96.926
+  p95: 173.892
+  p99: 207.146

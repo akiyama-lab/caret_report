@@ -1,0 +1,1439 @@
+<!-- prettier-ignore -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Node: /control/vehicle_cmd_gate, report_session-20250528141503</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Node: /control/vehicle_cmd_gate</h1>
+      <h2>report_session-20250528141503</h2>
+
+      <p><a href="../../index.html">Back to Top</a>, <a href="./index.html">Back to Node List</a></p>
+      <hr />
+
+      
+        <h3>Frequency</h3>
+
+        
+          <iframe src="Frequency_control_vehicle_cmd_gate.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [Hz]</th>
+            <th>Median [Hz]</th>
+            <th>Min [Hz]</th>
+            <th>95%ile [Hz]</th>
+            <th>99%ile [Hz]</th>
+            <th>Max [Hz]</th>
+            <th>Std [Hz]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">1.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/planning/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/control/shift_decider/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/external/selected/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/external/selected/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_5</td>
+                
+                    <td>/external/selected/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_6</td>
+                
+                    <td>/system/emergency/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_7</td>
+                
+                    <td>/system/emergency/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion_utils::VehicleStopChecker::*(autoware::motion_utils::VehicleStopChecker*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_8</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">49.958</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">49.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">0.204</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_external_api_msgs::msg::Heartbeat_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_9</td>
+                
+                    <td>/external/selected/heartbeat</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_control_msgs::msg::GateMode_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_10</td>
+                
+                    <td>/control/gate_mode_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; &gt;)#1}">
+                <td>subscription_11</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">49.917</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">49.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">0.282</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; &gt;)#2}">
+                <td>subscription_12</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td class="text-end">49.958</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">49.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">50.000</td>
+                  <td class="text-end">0.204</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; &gt;)#3}">
+                <td>subscription_13</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td class="text-end">28.889</td>
+                  <td class="text-end">29.000</td>
+                  <td class="text-end">25.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.740</td>
+                  <td class="text-end">31.000</td>
+                  <td class="text-end">1.502</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; &gt;)#4}">
+                <td>subscription_14</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::MrmState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_15</td>
+                
+                    <td>/system/fail_safe/mrm_state</td>
+                  
+                
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">10.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_16</td>
+                
+                    <td>/control/trajectory_follower/control_cmd</td>
+                  
+                
+                  <td class="text-end">33.400</td>
+                  <td class="text-end">33.000</td>
+                  <td class="text-end">33.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">34.000</td>
+                  <td class="text-end">0.516</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_17</td>
+                
+                    <td>/external/selected/control_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_18</td>
+                
+                    <td>/system/emergency/control_cmd</td>
+                  
+                
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">30.000</td>
+                  <td class="text-end">0.000</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Frequency" aria-expanded="false" aria-controls="collapse_Frequency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Frequency">
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_00_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_01_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_02_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_11_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_14_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_15_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_16_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_18_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_19_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Frequency_control_vehicle_cmd_gate_callback_21_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Period</h3>
+
+        
+          <iframe src="Period_control_vehicle_cmd_gate.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">999.773</td>
+                  <td class="text-end">997.186</td>
+                  <td class="text-end">992.941</td>
+                  <td class="text-end">1008.699</td>
+                  <td class="text-end">1009.520</td>
+                  <td class="text-end">1009.764</td>
+                  <td class="text-end">5.362</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">100.011</td>
+                  <td class="text-end">101.436</td>
+                  <td class="text-end">79.864</td>
+                  <td class="text-end">113.981</td>
+                  <td class="text-end">118.212</td>
+                  <td class="text-end">120.245</td>
+                  <td class="text-end">7.211</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">100.009</td>
+                  <td class="text-end">101.349</td>
+                  <td class="text-end">78.945</td>
+                  <td class="text-end">114.678</td>
+                  <td class="text-end">119.328</td>
+                  <td class="text-end">120.489</td>
+                  <td class="text-end">7.406</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/planning/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/control/shift_decider/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/external/selected/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/external/selected/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_5</td>
+                
+                    <td>/external/selected/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_6</td>
+                
+                    <td>/system/emergency/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_7</td>
+                
+                    <td>/system/emergency/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion_utils::VehicleStopChecker::*(autoware::motion_utils::VehicleStopChecker*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_8</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">20.017</td>
+                  <td class="text-end">20.254</td>
+                  <td class="text-end">1.158</td>
+                  <td class="text-end">24.377</td>
+                  <td class="text-end">37.918</td>
+                  <td class="text-end">45.420</td>
+                  <td class="text-end">4.224</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_external_api_msgs::msg::Heartbeat_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_9</td>
+                
+                    <td>/external/selected/heartbeat</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_control_msgs::msg::GateMode_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_10</td>
+                
+                    <td>/control/gate_mode_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; &gt;)#1}">
+                <td>subscription_11</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">20.032</td>
+                  <td class="text-end">20.280</td>
+                  <td class="text-end">0.762</td>
+                  <td class="text-end">24.825</td>
+                  <td class="text-end">37.650</td>
+                  <td class="text-end">45.438</td>
+                  <td class="text-end">4.267</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; &gt;)#2}">
+                <td>subscription_12</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td class="text-end">20.017</td>
+                  <td class="text-end">20.293</td>
+                  <td class="text-end">0.733</td>
+                  <td class="text-end">24.915</td>
+                  <td class="text-end">37.668</td>
+                  <td class="text-end">45.365</td>
+                  <td class="text-end">4.349</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; &gt;)#3}">
+                <td>subscription_13</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td class="text-end">34.653</td>
+                  <td class="text-end">30.955</td>
+                  <td class="text-end">0.055</td>
+                  <td class="text-end">68.947</td>
+                  <td class="text-end">79.985</td>
+                  <td class="text-end">86.099</td>
+                  <td class="text-end">15.467</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; &gt;)#4}">
+                <td>subscription_14</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::MrmState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_15</td>
+                
+                    <td>/system/fail_safe/mrm_state</td>
+                  
+                
+                  <td class="text-end">100.016</td>
+                  <td class="text-end">101.265</td>
+                  <td class="text-end">79.189</td>
+                  <td class="text-end">113.909</td>
+                  <td class="text-end">119.045</td>
+                  <td class="text-end">120.819</td>
+                  <td class="text-end">7.533</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_16</td>
+                
+                    <td>/control/trajectory_follower/control_cmd</td>
+                  
+                
+                  <td class="text-end">30.010</td>
+                  <td class="text-end">30.361</td>
+                  <td class="text-end">6.987</td>
+                  <td class="text-end">36.042</td>
+                  <td class="text-end">45.479</td>
+                  <td class="text-end">53.759</td>
+                  <td class="text-end">4.912</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_17</td>
+                
+                    <td>/external/selected/control_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_18</td>
+                
+                    <td>/system/emergency/control_cmd</td>
+                  
+                
+                  <td class="text-end">33.332</td>
+                  <td class="text-end">30.858</td>
+                  <td class="text-end">16.622</td>
+                  <td class="text-end">41.359</td>
+                  <td class="text-end">43.727</td>
+                  <td class="text-end">55.576</td>
+                  <td class="text-end">5.062</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Period" aria-expanded="false" aria-controls="collapse_Period">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Period">
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_00_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_01_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_02_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_11_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_14_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_15_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_16_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_18_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_19_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Period_control_vehicle_cmd_gate_callback_21_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+        <h3>Latency</h3>
+
+        
+          <iframe src="Latency_control_vehicle_cmd_gate.html" frameborder="0" width="100%" height="400" scrolling="yes"></iframe>
+        
+
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <tr class="table-primary text-center">
+            <th width="10%">Callback Name</th>
+            <th width="30%">Trigger</th>
+            <th>Avg [ms]</th>
+            <th>Median [ms]</th>
+            <th>Min [ms]</th>
+            <th>95%ile [ms]</th>
+            <th>99%ile [ms]</th>
+            <th>Max [ms]</th>
+            <th>Std [ms]</th>
+          </tr>
+          
+            
+              <tr title="std::_Bind&lt;void (diagnostic_updater::Updater::*(diagnostic_updater::Updater*))()&gt;">
+                <td>timer_0</td>
+                
+                    <td>1000.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.603</td>
+                  <td class="text-end">0.508</td>
+                  <td class="text-end">0.079</td>
+                  <td class="text-end">1.805</td>
+                  <td class="text-end">3.133</td>
+                  <td class="text-end">3.528</td>
+                  <td class="text-end">0.720</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_1</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.499</td>
+                  <td class="text-end">0.297</td>
+                  <td class="text-end">0.092</td>
+                  <td class="text-end">1.352</td>
+                  <td class="text-end">2.996</td>
+                  <td class="text-end">3.461</td>
+                  <td class="text-end">0.481</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*))()&gt;">
+                <td>timer_2</td>
+                
+                    <td>100.0 [ms]</td>
+                  
+                
+                  <td class="text-end">0.079</td>
+                  <td class="text-end">0.057</td>
+                  <td class="text-end">0.024</td>
+                  <td class="text-end">0.183</td>
+                  <td class="text-end">0.338</td>
+                  <td class="text-end">1.937</td>
+                  <td class="text-end">0.121</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_0</td>
+                
+                    <td>/planning/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_1</td>
+                
+                    <td>/planning/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_2</td>
+                
+                    <td>/control/shift_decider/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::TurnIndicatorsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_3</td>
+                
+                    <td>/external/selected/turn_indicators_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_4</td>
+                
+                    <td>/external/selected/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_5</td>
+                
+                    <td>/external/selected/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::HazardLightsCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_6</td>
+                
+                    <td>/system/emergency/hazard_lights_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware_utils_rclcpp::InterProcessPollingSubscriber&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt;, autoware_utils_rclcpp::polling_policy::Latest&gt;::InterProcessPollingSubscriber(rclcpp::Node*, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;, rclcpp::QoS const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::GearCommand_&lt;std::allocator&lt;void&gt; &gt; const&gt;)#1}">
+                <td>subscription_7</td>
+                
+                    <td>/system/emergency/gear_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::motion_utils::VehicleStopChecker::*(autoware::motion_utils::VehicleStopChecker*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_8</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">0.007</td>
+                  <td class="text-end">0.006</td>
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.015</td>
+                  <td class="text-end">0.024</td>
+                  <td class="text-end">0.048</td>
+                  <td class="text-end">0.004</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_external_api_msgs::msg::Heartbeat_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_9</td>
+                
+                    <td>/external/selected/heartbeat</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;tier4_control_msgs::msg::GateMode_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_10</td>
+                
+                    <td>/control/gate_mode_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;nav_msgs::msg::Odometry_&lt;std::allocator&lt;void&gt; &gt; &gt;)#1}">
+                <td>subscription_11</td>
+                
+                    <td>/localization/kinematic_state</td>
+                  
+                
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.000</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.006</td>
+                  <td class="text-end">0.046</td>
+                  <td class="text-end">0.002</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;geometry_msgs::msg::AccelWithCovarianceStamped_&lt;std::allocator&lt;void&gt; &gt; &gt;)#2}">
+                <td>subscription_12</td>
+                
+                    <td>/localization/acceleration</td>
+                  
+                
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.000</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.007</td>
+                  <td class="text-end">0.001</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_vehicle_msgs::msg::SteeringReport_&lt;std::allocator&lt;void&gt; &gt; &gt;)#3}">
+                <td>subscription_13</td>
+                
+                    <td>/vehicle/status/steering_status</td>
+                  
+                
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.000</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.005</td>
+                  <td class="text-end">0.029</td>
+                  <td class="text-end">0.001</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="autoware::vehicle_cmd_gate::VehicleCmdGate::VehicleCmdGate(rclcpp::NodeOptions const&amp;)::{lambda(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::OperationModeState_&lt;std::allocator&lt;void&gt; &gt; &gt;)#4}">
+                <td>subscription_14</td>
+                
+                    <td>/system/operation_mode/state</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_adapi_v1_msgs::msg::MrmState_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_15</td>
+                
+                    <td>/system/fail_safe/mrm_state</td>
+                  
+                
+                  <td class="text-end">0.005</td>
+                  <td class="text-end">0.004</td>
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.011</td>
+                  <td class="text-end">0.015</td>
+                  <td class="text-end">0.114</td>
+                  <td class="text-end">0.007</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_16</td>
+                
+                    <td>/control/trajectory_follower/control_cmd</td>
+                  
+                
+                  <td class="text-end">0.290</td>
+                  <td class="text-end">0.198</td>
+                  <td class="text-end">0.087</td>
+                  <td class="text-end">0.795</td>
+                  <td class="text-end">1.135</td>
+                  <td class="text-end">1.916</td>
+                  <td class="text-end">0.235</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_17</td>
+                
+                    <td>/external/selected/control_cmd</td>
+                  
+                
+                  <td>---</td>
+                  <td>---</td>
+                  <td>---</td>
+                
+              </tr>
+            
+          
+            
+              <tr title="std::_Bind&lt;void (autoware::vehicle_cmd_gate::VehicleCmdGate::*(autoware::vehicle_cmd_gate::VehicleCmdGate*, std::_Placeholder&lt;1&gt;))(std::shared_ptr&lt;autoware_control_msgs::msg::Control_&lt;std::allocator&lt;void&gt; &gt; const&gt;)&gt;">
+                <td>subscription_18</td>
+                
+                    <td>/system/emergency/control_cmd</td>
+                  
+                
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.002</td>
+                  <td class="text-end">0.001</td>
+                  <td class="text-end">0.005</td>
+                  <td class="text-end">0.012</td>
+                  <td class="text-end">0.037</td>
+                  <td class="text-end">0.002</td>
+                
+              </tr>
+            
+          
+        </table>
+
+        <button class="btn btn-primary btn_collapse" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_Latency" aria-expanded="false" aria-controls="collapse_Latency">
+          Show histogram
+        </button>
+
+        <div class="row collapse.show" id="collapse_Latency">
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_00_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_01_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_02_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_11_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_14_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_15_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_16_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_18_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_19_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+            
+          
+            
+              <div class="col">
+                <iframe src="Latency_control_vehicle_cmd_gate_callback_21_hist.html" frameborder="0" width="600" height="400" scrolling="yes"></iframe>
+              </div>
+            
+          
+        </div>
+
+        <hr />
+
+      
+    </div>  <!-- container -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        // collapse after getting height (two clicks are needed for some reasons...)
+        $('.btn_collapse').click();
+        setTimeout(function(){
+          $('.btn_collapse').click();
+            }, 500);
+      }
+    </script>
+  </body>
+</html>

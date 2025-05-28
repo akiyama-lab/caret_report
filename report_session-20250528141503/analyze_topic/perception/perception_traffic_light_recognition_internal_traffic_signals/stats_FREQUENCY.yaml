@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/internal/traffic_signals
+  publish_node_name: /perception/traffic_light_recognition/traffic_light_multi_camera_fusion
+  subscribe_node_name: /perception/traffic_light_recognition/traffic_light_arbiter
+  filename: FREQUENCY_perception_traffic_light_recognition_internal_traffic_signals_0_perception_traffic_light_recognition_traffic_l
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

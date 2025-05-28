@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/camera7/classification/traffic_signals
+  publish_node_name: /perception/traffic_light_recognition/camera7/classification/traffic_light_occlusion_predictor
+  subscribe_node_name: /perception/traffic_light_recognition/traffic_light_multi_camera_fusion
+  filename: PERIOD_perception_traffic_light_recognition_camera7_classification_traffic_signals_0_perception_traffic_light_recognitio
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'

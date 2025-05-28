@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/parking/is_completed
+  publish_node_name: /planning/scenario_planning/parking/freespace_planner
+  subscribe_node_name: /planning/scenario_planning/scenario_selector
+  filename: PERIOD_planning_scenario_planning_parking_is_completed_0_planning_scenario_planning_scenario_selector
+  avg: 99.212
+  std: 11.074
+  min: 0.192
+  max: 119.602
+  p50: 101.321
+  p95: 114.709
+  p99: 118.912

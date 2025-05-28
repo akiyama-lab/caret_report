@@ -1,0 +1,11 @@
+- topic_name: /localization/pose_twist_fusion_filter/biased_pose_with_covariance
+  publish_node_name: /localization/pose_twist_fusion_filter/ekf_localizer
+  subscribe_node_name: /localization/pose_estimator/ndt_scan_matcher
+  filename: LATENCY_localization_pose_twist_fusion_filter_biased_pose_with_covariance_0_localization_pose_estimator_ndt_scan_matcher
+  avg: 0.138
+  std: 0.202
+  min: 0.032
+  max: 3.059
+  p50: 0.086
+  p95: 0.311
+  p99: 1.009

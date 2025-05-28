@@ -1,0 +1,11 @@
+- topic_name: /localization/pose_twist_fusion_filter/pose
+  publish_node_name: /localization/pose_twist_fusion_filter/ekf_localizer
+  subscribe_node_name: /system/topic_state_monitor_pose_twist_fusion_filter_pose
+  filename: FREQUENCY_localization_pose_twist_fusion_filter_pose_0_system_topic_state_monitor_pose_twist_fusion_filter_pose
+  avg: 50.000
+  std: 0.913
+  min: 49.000
+  max: 51.000
+  p50: 50.000
+  p95: 51.000
+  p99: 51.000

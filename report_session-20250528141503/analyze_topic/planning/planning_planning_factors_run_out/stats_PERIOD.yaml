@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/run_out
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_run_out_0_adapi_node_planning
+  avg: 104.155
+  std: 57.226
+  min: 9.582
+  max: 694.863
+  p50: 100.030
+  p95: 121.367
+  p99: 130.170

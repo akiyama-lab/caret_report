@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/clustering/clusters
+  publish_node_name: /perception/object_recognition/detection/clustering/euclidean_cluster
+  subscribe_node_name: /perception/object_recognition/detection/clustering/shape_estimation
+  filename: PERIOD_perception_object_recognition_detection_clustering_clusters_0_perception_object_recognition_detection_clustering_
+  avg: 99.408
+  std: 42.670
+  min: 9.536
+  max: 251.511
+  p50: 97.570
+  p95: 173.538
+  p99: 206.765

@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/start_planner
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_start_planner_0_adapi_node_planning
+  avg: 0.456
+  std: 0.492
+  min: 0.040
+  max: 3.240
+  p50: 0.356
+  p95: 1.540
+  p99: 2.758

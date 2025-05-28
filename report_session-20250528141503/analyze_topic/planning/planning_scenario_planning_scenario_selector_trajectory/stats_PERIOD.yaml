@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/scenario_selector/trajectory
+  publish_node_name: /planning/scenario_planning/scenario_selector
+  subscribe_node_name: /planning/scenario_planning/velocity_smoother
+  filename: PERIOD_planning_scenario_planning_scenario_selector_trajectory_0_planning_scenario_planning_velocity_smoother
+  avg: 98.813
+  std: 20.766
+  min: 6.901
+  max: 160.004
+  p50: 99.739
+  p95: 133.129
+  p99: 149.412

@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/rear/self_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/rear/crop_box_filter_self
+  subscribe_node_name: /sensing/lidar/rear/crop_box_filter_mirror
+  filename: PERIOD_sensing_lidar_rear_self_cropped_pointcloud_ex_0_sensing_lidar_rear_crop_box_filter_mirror
+  avg: '---'
+  std: '---'
+  min: '---'
+  max: '---'
+  p50: '---'
+  p95: '---'
+  p99: '---'
