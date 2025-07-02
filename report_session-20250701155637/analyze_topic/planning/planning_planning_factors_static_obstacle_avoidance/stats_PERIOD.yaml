@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/static_obstacle_avoidance
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_static_obstacle_avoidance_0_adapi_node_planning
+  avg: 100.534
+  std: 24.154
+  min: 9.687
+  max: 233.045
+  p50: 100.521
+  p95: 130.770
+  p99: 192.753

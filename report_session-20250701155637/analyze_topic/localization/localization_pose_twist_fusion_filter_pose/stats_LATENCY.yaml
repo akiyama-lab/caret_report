@@ -1,0 +1,11 @@
+- topic_name: /localization/pose_twist_fusion_filter/pose
+  publish_node_name: /localization/pose_twist_fusion_filter/ekf_localizer
+  subscribe_node_name: /system/topic_state_monitor_pose_twist_fusion_filter_pose
+  filename: LATENCY_localization_pose_twist_fusion_filter_pose_0_system_topic_state_monitor_pose_twist_fusion_filter_pose
+  avg: 0.444
+  std: 0.304
+  min: 0.076
+  max: 6.352
+  p50: 0.410
+  p95: 0.817
+  p99: 1.140

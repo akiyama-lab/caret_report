@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/internal/traffic_signals
+  publish_node_name: /perception/traffic_light_recognition/traffic_light_multi_camera_fusion
+  subscribe_node_name: /perception/traffic_light_recognition/traffic_light_arbiter
+  filename: PERIOD_perception_traffic_light_recognition_internal_traffic_signals_0_perception_traffic_light_recognition_traffic_ligh
+  avg: 133.987
+  std: 91.309
+  min: 1.457
+  max: 1096.723
+  p50: 105.674
+  p95: 306.916
+  p99: 488.575

@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/obstacle_cruise
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_obstacle_cruise_0_adapi_node_planning
+  avg: 0.132
+  std: 0.230
+  min: 0.019
+  max: 3.540
+  p50: 0.065
+  p95: 0.387
+  p99: 1.194

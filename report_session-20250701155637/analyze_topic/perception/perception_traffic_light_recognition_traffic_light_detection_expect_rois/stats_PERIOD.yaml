@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/traffic_light/detection/expect/rois
+  publish_node_name: /perception/traffic_light_recognition/traffic_light/detection/traffic_light_map_based_detector
+  subscribe_node_name: /perception/traffic_light_recognition/traffic_light/detection/traffic_light_fine_detector
+  filename: PERIOD_perception_traffic_light_recognition_traffic_light_detection_expect_rois_0_perception_traffic_light_recognition_t
+  avg: 100.257
+  std: 22.938
+  min: 0.968
+  max: 242.200
+  p50: 100.255
+  p95: 138.029
+  p99: 163.213

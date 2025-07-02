@@ -1,0 +1,11 @@
+- topic_name: /localization/util/downsample/pointcloud
+  publish_node_name: /localization/util/random_downsample_filter
+  subscribe_node_name: /localization/pose_estimator/ndt_scan_matcher
+  filename: PERIOD_localization_util_downsample_pointcloud_0_localization_pose_estimator_ndt_scan_matcher
+  avg: 143.909
+  std: 98.815
+  min: 0.730
+  max: 672.822
+  p50: 107.356
+  p95: 325.690
+  p99: 396.510

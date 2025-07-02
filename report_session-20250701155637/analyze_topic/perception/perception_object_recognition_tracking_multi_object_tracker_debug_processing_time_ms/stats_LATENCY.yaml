@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/tracking/multi_object_tracker/debug/processing_time_ms
+  publish_node_name: /perception/object_recognition/tracking/multi_object_tracker
+  subscribe_node_name: /system/processing_time_checker
+  filename: LATENCY_perception_object_recognition_tracking_multi_object_tracker_debug_processing_time_ms_0_system_processing_time_ch
+  avg: 0.371
+  std: 0.393
+  min: 0.025
+  max: 3.746
+  p50: 0.234
+  p95: 1.157
+  p99: 1.870

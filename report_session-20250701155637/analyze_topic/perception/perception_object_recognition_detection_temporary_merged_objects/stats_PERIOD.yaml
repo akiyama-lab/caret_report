@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/temporary_merged_objects
+  publish_node_name: /perception/object_recognition/detection/object_association_merger_alpha
+  subscribe_node_name: /perception/object_recognition/detection/object_association_merger_beta
+  filename: PERIOD_perception_object_recognition_detection_temporary_merged_objects_0_perception_object_recognition_detection_object
+  avg: 145.529
+  std: 94.099
+  min: 0.135
+  max: 675.419
+  p50: 110.228
+  p95: 314.888
+  p99: 392.683

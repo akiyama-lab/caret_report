@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  subscribe_node_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer
+  filename: PERIOD_planning_scenario_planning_lane_driving_motion_planning_path_smoother_path_0_planning_scenario_planning_lane_driv
+  avg: 100.522
+  std: 27.815
+  min: 3.257
+  max: 249.309
+  p50: 100.631
+  p95: 139.175
+  p99: 196.831

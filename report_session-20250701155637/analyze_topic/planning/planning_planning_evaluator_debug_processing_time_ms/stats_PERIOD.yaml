@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_evaluator/debug/processing_time_ms
+  publish_node_name: /planning/planning_evaluator
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_planning_planning_evaluator_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 100.510
+  std: 24.368
+  min: 9.645
+  max: 228.500
+  p50: 101.326
+  p95: 136.119
+  p99: 193.367

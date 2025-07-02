@@ -1,0 +1,11 @@
+- topic_name: /system/component_state_monitor/component/launch/perception
+  publish_node_name: /system/component_state_monitor/component
+  subscribe_node_name: /adapi/node/autoware_state
+  filename: LATENCY_system_component_state_monitor_component_launch_perception_0_adapi_node_autoware_state
+  avg: 0.982
+  std: 0.945
+  min: 0.113
+  max: 3.157
+  p50: 0.509
+  p95: 3.010
+  p99: 3.151

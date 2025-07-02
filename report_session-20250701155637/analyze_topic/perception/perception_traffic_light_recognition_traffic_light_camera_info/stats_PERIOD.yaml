@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/traffic_light/camera_info
+  publish_node_name: /perception/traffic_light_recognition/traffic_light/traffic_light_camera_info_relay
+  subscribe_node_name: /perception/traffic_light_recognition/traffic_light_multi_camera_fusion
+  filename: PERIOD_perception_traffic_light_recognition_traffic_light_camera_info_0_perception_traffic_light_recognition_traffic_lig
+  avg: 100.263
+  std: 12.822
+  min: 55.376
+  max: 167.358
+  p50: 100.165
+  p95: 121.633
+  p99: 135.045

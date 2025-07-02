@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/dynamic_obstacle_stop
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_dynamic_obstacle_stop_0_adapi_node_planning
+  avg: 100.472
+  std: 31.451
+  min: 2.033
+  max: 290.276
+  p50: 100.429
+  p95: 145.704
+  p99: 196.146

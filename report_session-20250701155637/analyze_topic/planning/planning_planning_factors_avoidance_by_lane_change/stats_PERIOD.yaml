@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/avoidance_by_lane_change
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_avoidance_by_lane_change_0_adapi_node_planning
+  avg: 100.534
+  std: 24.201
+  min: 9.505
+  max: 233.072
+  p50: 100.561
+  p95: 130.711
+  p99: 192.831

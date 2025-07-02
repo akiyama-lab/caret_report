@@ -1,0 +1,11 @@
+- topic_name: /perception/traffic_light_recognition/judged/traffic_signals
+  publish_node_name: /perception/traffic_light_recognition/traffic_light_arbiter
+  subscribe_node_name: /perception/traffic_light_recognition/crosswalk_traffic_light_estimator
+  filename: LATENCY_perception_traffic_light_recognition_judged_traffic_signals_0_perception_traffic_light_recognition_crosswalk_tra
+  avg: 0.232
+  std: 0.222
+  min: 0.046
+  max: 4.607
+  p50: 0.171
+  p95: 0.516
+  p99: 1.028

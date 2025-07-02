@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/objects
+  publish_node_name: /perception/object_recognition/detection/object_lanelet_filter
+  subscribe_node_name: /perception/object_recognition/tracking/multi_object_tracker
+  filename: PERIOD_perception_object_recognition_detection_objects_0_perception_object_recognition_tracking_multi_object_tracker
+  avg: 145.495
+  std: 94.260
+  min: 0.175
+  max: 677.042
+  p50: 110.596
+  p95: 315.010
+  p99: 392.929

@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/static_obstacle_avoidance
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_static_obstacle_avoidance_0_adapi_node_planning
+  avg: 0.208
+  std: 0.208
+  min: 0.031
+  max: 2.769
+  p50: 0.148
+  p95: 0.487
+  p99: 1.262

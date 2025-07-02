@@ -1,0 +1,11 @@
+- topic_name: /system/component_state_monitor/component/launch/perception
+  publish_node_name: /system/component_state_monitor/component
+  subscribe_node_name: /adapi/node/autoware_state
+  filename: PERIOD_system_component_state_monitor_component_launch_perception_0_adapi_node_autoware_state
+  avg: 5069.973
+  std: 9940.117
+  min: 59.969
+  max: 39842.437
+  p50: 698.959
+  p95: 27664.015
+  p99: 37771.079

@@ -1,0 +1,11 @@
+- topic_name: /control/vehicle_cmd_gate/is_start_requested
+  publish_node_name: /control/vehicle_cmd_gate
+  subscribe_node_name: /adapi/node/motion
+  filename: PERIOD_control_vehicle_cmd_gate_is_start_requested_0_adapi_node_motion
+  avg: 28265.000
+  std: 29386.573
+  min: 8185.537
+  max: 61994.013
+  p50: 14615.449
+  p95: 57256.157
+  p99: 61046.442

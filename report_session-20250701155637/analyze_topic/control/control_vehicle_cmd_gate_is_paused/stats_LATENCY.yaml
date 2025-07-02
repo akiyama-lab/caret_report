@@ -1,0 +1,11 @@
+- topic_name: /control/vehicle_cmd_gate/is_paused
+  publish_node_name: /control/vehicle_cmd_gate
+  subscribe_node_name: /adapi/node/motion
+  filename: LATENCY_control_vehicle_cmd_gate_is_paused_0_adapi_node_motion
+  avg: 0.347
+  std: 0.215
+  min: 0.169
+  max: 0.659
+  p50: 0.279
+  p95: 0.603
+  p99: 0.648

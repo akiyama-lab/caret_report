@@ -1,0 +1,11 @@
+- topic_name: /control/vehicle_cmd_gate/is_start_requested
+  publish_node_name: /control/vehicle_cmd_gate
+  subscribe_node_name: /adapi/node/motion
+  filename: LATENCY_control_vehicle_cmd_gate_is_start_requested_0_adapi_node_motion
+  avg: 0.370
+  std: 0.369
+  min: 0.100
+  max: 0.912
+  p50: 0.234
+  p95: 0.817
+  p99: 0.893

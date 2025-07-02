@@ -1,0 +1,11 @@
+- topic_name: /control/shift_decider/gear_cmd
+  publish_node_name: /control/autoware_shift_decider
+  subscribe_node_name: /control/vehicle_cmd_gate
+  filename: PERIOD_control_shift_decider_gear_cmd_0_control_vehicle_cmd_gate
+  avg: 100.297
+  std: 32.452
+  min: 7.006
+  max: 209.357
+  p50: 101.364
+  p95: 168.396
+  p99: 187.851

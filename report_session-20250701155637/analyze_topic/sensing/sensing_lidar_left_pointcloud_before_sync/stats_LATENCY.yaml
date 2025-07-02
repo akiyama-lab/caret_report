@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/left/pointcloud_before_sync
+  publish_node_name: /sensing/lidar/left/ring_outlier_filter
+  subscribe_node_name: /sensing/lidar/concatenate_data
+  filename: LATENCY_sensing_lidar_left_pointcloud_before_sync_0_sensing_lidar_concatenate_data
+  avg: 0.593
+  std: 0.701
+  min: 0.105
+  max: 7.403
+  p50: 0.405
+  p95: 1.460
+  p99: 4.441

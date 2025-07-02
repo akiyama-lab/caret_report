@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/velocity_smoother/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/velocity_smoother
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_planning_scenario_planning_velocity_smoother_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 100.527
+  std: 31.951
+  min: 2.008
+  max: 292.845
+  p50: 100.613
+  p95: 148.305
+  p99: 195.457

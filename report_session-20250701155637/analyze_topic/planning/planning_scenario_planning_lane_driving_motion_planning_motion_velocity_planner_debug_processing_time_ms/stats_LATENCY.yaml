@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  subscribe_node_name: /system/processing_time_checker
+  filename: LATENCY_planning_scenario_planning_lane_driving_motion_planning_motion_velocity_planner_debug_processing_time_ms_0_syste
+  avg: 0.054
+  std: 0.063
+  min: 0.011
+  max: 0.764
+  p50: 0.035
+  p95: 0.157
+  p99: 0.356

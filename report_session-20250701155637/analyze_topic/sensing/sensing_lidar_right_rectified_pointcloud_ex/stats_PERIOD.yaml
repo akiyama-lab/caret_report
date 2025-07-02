@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/right/rectified/pointcloud_ex
+  publish_node_name: /sensing/lidar/right/distortion_corrector_node
+  subscribe_node_name: /sensing/lidar/right/ring_outlier_filter
+  filename: PERIOD_sensing_lidar_right_rectified_pointcloud_ex_0_sensing_lidar_right_ring_outlier_filter
+  avg: 222.017
+  std: 178.050
+  min: 57.184
+  max: 1212.361
+  p50: 184.793
+  p95: 588.692
+  p99: 913.344
