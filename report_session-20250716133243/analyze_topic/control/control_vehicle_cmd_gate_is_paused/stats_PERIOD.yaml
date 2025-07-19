@@ -1,0 +1,11 @@
+- topic_name: /control/vehicle_cmd_gate/is_paused
+  publish_node_name: /control/vehicle_cmd_gate
+  subscribe_node_name: /adapi/node/motion
+  filename: PERIOD_control_vehicle_cmd_gate_is_paused_0_adapi_node_motion
+  avg: 18452.965
+  std: 28055.006
+  min: 14.447
+  max: 67063.691
+  p50: 8104.243
+  p95: 57043.065
+  p99: 65059.565

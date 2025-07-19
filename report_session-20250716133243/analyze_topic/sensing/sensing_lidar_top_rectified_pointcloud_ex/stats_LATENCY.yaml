@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/top/rectified/pointcloud_ex
+  publish_node_name: /sensing/lidar/top/distortion_corrector_node
+  subscribe_node_name: /sensing/lidar/top/ring_outlier_filter
+  filename: LATENCY_sensing_lidar_top_rectified_pointcloud_ex_0_sensing_lidar_top_ring_outlier_filter
+  avg: 0.091
+  std: 0.080
+  min: 0.010
+  max: 1.180
+  p50: 0.072
+  p95: 0.206
+  p99: 0.248

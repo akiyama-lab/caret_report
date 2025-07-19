@@ -1,0 +1,3355 @@
+- target_path_name: component_sensing_0
+  node_names:
+  - /sensing/lidar/right/crop_box_filter_self
+  - /sensing/lidar/right/crop_box_filter_mirror
+  - /sensing/lidar/right/distortion_corrector_node
+  - /sensing/lidar/right/ring_outlier_filter
+  - /sensing/lidar/concatenate_data
+  best_avg: 4.035
+  best_std: 2.764
+  best_min: 0.698
+  best_max: 17.650
+  best_p50: 3.430
+  best_p95: 9.809
+  best_p99: 12.712
+  worst_avg: 4.035
+  worst_std: 2.764
+  worst_min: 0.698
+  worst_max: 17.650
+  worst_p50: 3.430
+  worst_p95: 9.809
+  worst_p99: 12.712
+  filename_messageflow: ''
+  filename_messageflow_short: component_sensing_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_sensing_0_hist_best
+  filename_timeseries_best: component_sensing_0_timeseries_best
+  filename_stacked_bar_best: component_sensing_0_stacked_bar_best
+  filename_hist_worst: component_sensing_0_hist_worst
+  filename_timeseries_worst: component_sensing_0_timeseries_worst
+  filename_stacked_bar_worst: component_sensing_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.113
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.098
+      p95: 0.214
+      p99: 0.256
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.299
+      std: 0.203
+      min: 0.069
+      max: 2.061
+      p50: 0.253
+      p95: 0.602
+      p99: 0.778
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.260
+      p50: 0.050
+      p95: 0.134
+      p99: 0.189
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.356
+      std: 0.911
+      min: 0.239
+      max: 7.234
+      p50: 1.195
+      p95: 2.820
+      p99: 3.245
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.077
+      std: 0.057
+      min: 0.010
+      max: 0.356
+      p50: 0.057
+      p95: 0.175
+      p99: 0.221
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.794
+      std: 0.461
+      min: 0.160
+      max: 2.500
+      p50: 0.730
+      p95: 1.572
+      p99: 1.833
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.777
+      std: 0.856
+      min: 0.111
+      max: 8.105
+      p50: 0.533
+      p95: 2.242
+      p99: 4.827
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 0.557
+      std: 1.280
+      min: 0.003
+      max: 6.681
+      p50: 0.029
+      p95: 3.671
+      p99: 5.561
+  stacked_bar_worst:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.113
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.098
+      p95: 0.214
+      p99: 0.256
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.299
+      std: 0.203
+      min: 0.069
+      max: 2.061
+      p50: 0.253
+      p95: 0.602
+      p99: 0.778
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.260
+      p50: 0.050
+      p95: 0.134
+      p99: 0.189
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.356
+      std: 0.911
+      min: 0.239
+      max: 7.234
+      p50: 1.195
+      p95: 2.820
+      p99: 3.245
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.077
+      std: 0.057
+      min: 0.010
+      max: 0.356
+      p50: 0.057
+      p95: 0.175
+      p99: 0.221
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.794
+      std: 0.461
+      min: 0.160
+      max: 2.500
+      p50: 0.730
+      p95: 1.572
+      p99: 1.833
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.777
+      std: 0.856
+      min: 0.111
+      max: 8.105
+      p50: 0.533
+      p95: 2.242
+      p99: 4.827
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 0.557
+      std: 1.280
+      min: 0.003
+      max: 6.681
+      p50: 0.029
+      p95: 3.671
+      p99: 5.561
+- target_path_name: component_localization_0
+  node_names:
+  - /sensing/lidar/concatenate_data
+  - /localization/util/crop_box_filter_measurement_range
+  - /localization/util/voxel_grid_downsample_filter
+  - /localization/util/random_downsample_filter
+  - /localization/pose_estimator/ndt_scan_matcher
+  - /localization/pose_twist_fusion_filter/ekf_localizer
+  - /localization/pose_twist_fusion_filter/stop_filter
+  best_avg: 43.589
+  best_std: 26.515
+  best_min: 5.728
+  best_max: 211.937
+  best_p50: 36.064
+  best_p95: 95.633
+  best_p99: 109.894
+  worst_avg: 47.686
+  worst_std: 33.358
+  worst_min: 5.728
+  worst_max: 441.155
+  worst_p50: 39.477
+  worst_p95: 99.286
+  worst_p99: 117.018
+  filename_messageflow: ''
+  filename_messageflow_short: component_localization_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_localization_0_hist_best
+  filename_timeseries_best: component_localization_0_timeseries_best
+  filename_stacked_bar_best: component_localization_0_stacked_bar_best
+  filename_hist_worst: component_localization_0_hist_worst
+  filename_timeseries_worst: component_localization_0_timeseries_worst
+  filename_stacked_bar_worst: component_localization_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 0.278
+      std: 0.713
+      min: 0.019
+      max: 8.389
+      p50: 0.118
+      p95: 0.831
+      p99: 3.537
+    /localization/util/crop_box_filter_measurement_range/callback_0:
+      avg: 0.889
+      std: 0.618
+      min: 0.077
+      max: 8.405
+      p50: 0.735
+      p95: 1.932
+      p99: 2.372
+    /localization/util/measurement_range/pointcloud:
+      avg: 0.409
+      std: 0.403
+      min: 0.012
+      max: 4.818
+      p50: 0.301
+      p95: 1.128
+      p99: 1.839
+    /localization/util/voxel_grid_downsample_filter/callback_0:
+      avg: 2.684
+      std: 1.555
+      min: 0.235
+      max: 11.486
+      p50: 2.452
+      p95: 5.273
+      p99: 6.477
+    /localization/util/voxel_grid_downsample/pointcloud:
+      avg: 0.175
+      std: 0.214
+      min: 0.014
+      max: 3.015
+      p50: 0.114
+      p95: 0.559
+      p99: 1.083
+    /localization/util/random_downsample_filter/callback_0:
+      avg: 0.075
+      std: 0.044
+      min: 0.015
+      max: 0.379
+      p50: 0.067
+      p95: 0.149
+      p99: 0.209
+    /localization/util/downsample/pointcloud:
+      avg: 0.370
+      std: 0.620
+      min: 0.046
+      max: 7.422
+      p50: 0.258
+      p95: 0.875
+      p99: 4.008
+    /localization/pose_estimator/ndt_scan_matcher/callback_2:
+      avg: 5.617
+      std: 3.185
+      min: 0.601
+      max: 30.437
+      p50: 5.167
+      p95: 11.124
+      p99: 14.081
+    /localization/pose_estimator/pose_with_covariance:
+      avg: 0.528
+      std: 1.308
+      min: 0.029
+      max: 13.098
+      p50: 0.160
+      p95: 3.080
+      p99: 6.618
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_1:
+      avg: 31.856
+      std: 25.614
+      min: 1.654
+      max: 197.459
+      p50: 23.771
+      p95: 83.456
+      p99: 96.506
+    /localization/pose_twist_fusion_filter/kinematic_state:
+      avg: 0.156
+      std: 0.100
+      min: 0.040
+      max: 1.984
+      p50: 0.139
+      p95: 0.280
+      p99: 0.359
+    /localization/pose_twist_fusion_filter/stop_filter/callback_0:
+      avg: 0.552
+      std: 0.294
+      min: 0.127
+      max: 1.978
+      p50: 0.562
+      p95: 0.982
+      p99: 1.130
+  stacked_bar_worst:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 0.260
+      std: 0.679
+      min: 0.019
+      max: 8.389
+      p50: 0.121
+      p95: 0.750
+      p99: 3.006
+    /localization/util/crop_box_filter_measurement_range/callback_0:
+      avg: 0.877
+      std: 0.603
+      min: 0.077
+      max: 8.405
+      p50: 0.731
+      p95: 1.829
+      p99: 2.284
+    /localization/util/measurement_range/pointcloud:
+      avg: 0.424
+      std: 0.435
+      min: 0.012
+      max: 5.388
+      p50: 0.309
+      p95: 1.126
+      p99: 1.952
+    /localization/util/voxel_grid_downsample_filter/callback_0:
+      avg: 2.660
+      std: 1.534
+      min: 0.235
+      max: 11.486
+      p50: 2.470
+      p95: 5.110
+      p99: 6.638
+    /localization/util/voxel_grid_downsample/pointcloud:
+      avg: 0.181
+      std: 0.216
+      min: 0.014
+      max: 3.015
+      p50: 0.119
+      p95: 0.567
+      p99: 1.041
+    /localization/util/random_downsample_filter/callback_0:
+      avg: 0.077
+      std: 0.044
+      min: 0.015
+      max: 0.379
+      p50: 0.068
+      p95: 0.152
+      p99: 0.209
+    /localization/util/downsample/pointcloud:
+      avg: 0.302
+      std: 0.278
+      min: 0.046
+      max: 4.346
+      p50: 0.270
+      p95: 0.650
+      p99: 1.193
+    /localization/pose_estimator/ndt_scan_matcher/callback_2:
+      avg: 6.858
+      std: 16.149
+      min: 0.601
+      max: 340.474
+      p50: 5.538
+      p95: 11.769
+      p99: 16.796
+    /localization/pose_estimator/pose_with_covariance:
+      avg: 0.613
+      std: 1.414
+      min: 0.029
+      max: 13.098
+      p50: 0.173
+      p95: 4.174
+      p99: 6.714
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_1:
+      avg: 34.727
+      std: 27.190
+      min: 1.654
+      max: 197.459
+      p50: 26.281
+      p95: 85.841
+      p99: 97.595
+    /localization/pose_twist_fusion_filter/kinematic_state:
+      avg: 0.156
+      std: 0.100
+      min: 0.040
+      max: 1.984
+      p50: 0.139
+      p95: 0.280
+      p99: 0.359
+    /localization/pose_twist_fusion_filter/stop_filter/callback_0:
+      avg: 0.552
+      std: 0.294
+      min: 0.127
+      max: 1.978
+      p50: 0.562
+      p95: 0.982
+      p99: 1.130
+- target_path_name: component_perception_0
+  node_names:
+  - /sensing/lidar/concatenate_data
+  - /perception/object_recognition/detection/centerpoint/lidar_centerpoint
+  - /perception/object_recognition/detection/object_association_merger_alpha
+  - /perception/object_recognition/detection/object_association_merger_beta
+  - /perception/object_recognition/detection/object_lanelet_filter
+  - /perception/object_recognition/tracking/multi_object_tracker
+  - /perception/object_recognition/prediction/map_based_prediction
+  best_avg: 77.708
+  best_std: 43.539
+  best_min: 9.477
+  best_max: 254.138
+  best_p50: 74.097
+  best_p95: 157.278
+  best_p99: 197.371
+  worst_avg: 90.253
+  worst_std: 47.061
+  worst_min: 9.752
+  worst_max: 254.138
+  worst_p50: 90.643
+  worst_p95: 175.873
+  worst_p99: 206.007
+  filename_messageflow: ''
+  filename_messageflow_short: component_perception_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_perception_0_hist_best
+  filename_timeseries_best: component_perception_0_timeseries_best
+  filename_stacked_bar_best: component_perception_0_stacked_bar_best
+  filename_hist_worst: component_perception_0_hist_worst
+  filename_timeseries_worst: component_perception_0_timeseries_worst
+  filename_stacked_bar_worst: component_perception_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.214
+      std: 0.699
+      min: 0.214
+      max: 6.373
+      p50: 1.079
+      p95: 2.454
+      p99: 3.419
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 6.763
+      std: 9.381
+      min: 2.210
+      max: 45.842
+      p50: 3.367
+      p95: 33.669
+      p99: 43.170
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.458
+      std: 0.335
+      min: 0.076
+      max: 4.440
+      p50: 0.430
+      p95: 0.857
+      p99: 1.850
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 10.111
+      std: 7.120
+      min: 0.020
+      max: 93.199
+      p50: 9.821
+      p95: 18.499
+      p99: 21.969
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.201
+      std: 0.142
+      min: 0.025
+      max: 1.076
+      p50: 0.165
+      p95: 0.486
+      p99: 0.717
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.277
+      std: 0.388
+      min: 0.007
+      max: 2.651
+      p50: 0.075
+      p95: 1.164
+      p99: 1.575
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.216
+      std: 0.151
+      min: 0.048
+      max: 1.933
+      p50: 0.180
+      p95: 0.508
+      p99: 0.735
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.263
+      std: 0.384
+      min: 0.017
+      max: 3.474
+      p50: 0.132
+      p95: 1.040
+      p99: 1.970
+    /perception/object_recognition/detection/objects:
+      avg: 0.164
+      std: 0.138
+      min: 0.037
+      max: 2.302
+      p50: 0.130
+      p95: 0.345
+      p99: 0.604
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 56.443
+      std: 40.959
+      min: 0.220
+      max: 208.423
+      p50: 53.694
+      p95: 136.138
+      p99: 168.711
+    /perception/object_recognition/tracking/objects:
+      avg: 0.616
+      std: 0.503
+      min: 0.102
+      max: 3.871
+      p50: 0.475
+      p95: 1.516
+      p99: 2.694
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 0.983
+      std: 0.717
+      min: 0.142
+      max: 4.224
+      p50: 0.794
+      p95: 2.632
+      p99: 2.980
+  stacked_bar_worst:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.183
+      std: 0.633
+      min: 0.214
+      max: 5.310
+      p50: 1.082
+      p95: 2.298
+      p99: 3.132
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 6.178
+      std: 8.614
+      min: 2.210
+      max: 45.842
+      p50: 3.352
+      p95: 33.195
+      p99: 43.127
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.467
+      std: 0.334
+      min: 0.076
+      max: 4.440
+      p50: 0.443
+      p95: 0.876
+      p99: 1.953
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 11.362
+      std: 8.474
+      min: 0.020
+      max: 95.615
+      p50: 10.659
+      p95: 22.928
+      p99: 32.302
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.212
+      std: 0.153
+      min: 0.025
+      max: 1.547
+      p50: 0.172
+      p95: 0.511
+      p99: 0.724
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.278
+      std: 0.387
+      min: 0.007
+      max: 2.651
+      p50: 0.080
+      p95: 1.144
+      p99: 1.582
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.228
+      std: 0.160
+      min: 0.048
+      max: 1.933
+      p50: 0.192
+      p95: 0.565
+      p99: 0.740
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.293
+      std: 0.451
+      min: 0.017
+      max: 4.344
+      p50: 0.136
+      p95: 1.166
+      p99: 2.547
+    /perception/object_recognition/detection/objects:
+      avg: 0.173
+      std: 0.163
+      min: 0.035
+      max: 2.302
+      p50: 0.137
+      p95: 0.362
+      p99: 0.680
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 68.279
+      std: 45.106
+      min: 0.220
+      max: 208.423
+      p50: 68.041
+      p95: 157.783
+      p99: 175.323
+    /perception/object_recognition/tracking/objects:
+      avg: 0.616
+      std: 0.503
+      min: 0.102
+      max: 3.871
+      p50: 0.475
+      p95: 1.516
+      p99: 2.694
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 0.983
+      std: 0.717
+      min: 0.142
+      max: 4.224
+      p50: 0.794
+      p95: 2.632
+      p99: 2.980
+- target_path_name: component_perception(detection_lidar)_0
+  node_names:
+  - /sensing/lidar/concatenate_data
+  - /perception/object_recognition/detection/centerpoint/lidar_centerpoint
+  - /perception/object_recognition/detection/object_association_merger_alpha
+  - /perception/object_recognition/detection/object_association_merger_beta
+  - /perception/object_recognition/detection/object_lanelet_filter
+  - /perception/object_recognition/tracking/multi_object_tracker
+  best_avg: 19.607
+  best_std: 10.623
+  best_min: 3.018
+  best_max: 101.613
+  best_p50: 17.983
+  best_p95: 41.208
+  best_p99: 53.069
+  worst_avg: 20.236
+  worst_std: 10.704
+  worst_min: 3.018
+  worst_max: 101.613
+  worst_p50: 18.505
+  worst_p95: 41.208
+  worst_p99: 53.069
+  filename_messageflow: ''
+  filename_messageflow_short: component_perception(detection_lidar)_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_perception(detection_lidar)_0_hist_best
+  filename_timeseries_best: component_perception(detection_lidar)_0_timeseries_best
+  filename_stacked_bar_best: component_perception(detection_lidar)_0_stacked_bar_best
+  filename_hist_worst: component_perception(detection_lidar)_0_hist_worst
+  filename_timeseries_worst: component_perception(detection_lidar)_0_timeseries_worst
+  filename_stacked_bar_worst: component_perception(detection_lidar)_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.209
+      std: 0.689
+      min: 0.214
+      max: 6.373
+      p50: 1.084
+      p95: 2.389
+      p99: 3.353
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 6.434
+      std: 9.000
+      min: 2.210
+      max: 45.842
+      p50: 3.362
+      p95: 33.522
+      p99: 43.187
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.461
+      std: 0.326
+      min: 0.076
+      max: 4.440
+      p50: 0.434
+      p95: 0.875
+      p99: 1.802
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 10.038
+      std: 7.365
+      min: 0.020
+      max: 95.615
+      p50: 9.599
+      p95: 18.769
+      p99: 23.022
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.212
+      std: 0.151
+      min: 0.025
+      max: 1.547
+      p50: 0.175
+      p95: 0.509
+      p99: 0.729
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.274
+      std: 0.399
+      min: 0.007
+      max: 3.703
+      p50: 0.079
+      p95: 1.132
+      p99: 1.662
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.227
+      std: 0.157
+      min: 0.048
+      max: 1.933
+      p50: 0.192
+      p95: 0.560
+      p99: 0.741
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.300
+      std: 0.454
+      min: 0.017
+      max: 4.344
+      p50: 0.138
+      p95: 1.165
+      p99: 2.570
+    /perception/object_recognition/detection/objects:
+      avg: 0.173
+      std: 0.160
+      min: 0.035
+      max: 2.302
+      p50: 0.137
+      p95: 0.367
+      p99: 0.709
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 0.278
+      std: 0.245
+      min: 0.028
+      max: 1.499
+      p50: 0.198
+      p95: 0.778
+      p99: 1.166
+  stacked_bar_worst:
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.174
+      std: 0.629
+      min: 0.214
+      max: 5.310
+      p50: 1.069
+      p95: 2.301
+      p99: 3.028
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 6.423
+      std: 9.002
+      min: 2.210
+      max: 45.842
+      p50: 3.357
+      p95: 33.522
+      p99: 43.187
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.461
+      std: 0.325
+      min: 0.076
+      max: 4.440
+      p50: 0.439
+      p95: 0.887
+      p99: 1.802
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 10.713
+      std: 7.651
+      min: 0.020
+      max: 95.615
+      p50: 10.350
+      p95: 20.522
+      p99: 26.273
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.212
+      std: 0.151
+      min: 0.025
+      max: 1.547
+      p50: 0.175
+      p95: 0.509
+      p99: 0.729
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.274
+      std: 0.399
+      min: 0.007
+      max: 3.703
+      p50: 0.079
+      p95: 1.132
+      p99: 1.662
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.227
+      std: 0.157
+      min: 0.048
+      max: 1.933
+      p50: 0.192
+      p95: 0.560
+      p99: 0.741
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.300
+      std: 0.454
+      min: 0.017
+      max: 4.344
+      p50: 0.138
+      p95: 1.165
+      p99: 2.570
+    /perception/object_recognition/detection/objects:
+      avg: 0.173
+      std: 0.160
+      min: 0.035
+      max: 2.302
+      p50: 0.137
+      p95: 0.367
+      p99: 0.709
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 0.278
+      std: 0.245
+      min: 0.028
+      max: 1.499
+      p50: 0.198
+      p95: 0.778
+      p99: 1.166
+- target_path_name: component_perception(prediction)_0
+  node_names:
+  - /perception/object_recognition/tracking/multi_object_tracker
+  - /perception/object_recognition/prediction/map_based_prediction
+  best_avg: 1.792
+  best_std: 1.098
+  best_min: 0.266
+  best_max: 7.171
+  best_p50: 1.554
+  best_p95: 3.941
+  best_p99: 4.890
+  worst_avg: 1.792
+  worst_std: 1.098
+  worst_min: 0.266
+  worst_max: 7.171
+  worst_p50: 1.554
+  worst_p95: 3.941
+  worst_p99: 4.890
+  filename_messageflow: ''
+  filename_messageflow_short: component_perception(prediction)_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_perception(prediction)_0_hist_best
+  filename_timeseries_best: component_perception(prediction)_0_timeseries_best
+  filename_stacked_bar_best: component_perception(prediction)_0_stacked_bar_best
+  filename_hist_worst: component_perception(prediction)_0_hist_worst
+  filename_timeseries_worst: component_perception(prediction)_0_timeseries_worst
+  filename_stacked_bar_worst: component_perception(prediction)_0_stacked_bar_worst
+  stacked_bar_best:
+    /perception/object_recognition/tracking/multi_object_tracker/callback_x:
+      avg: 0.073
+      std: 0.075
+      min: 0.004
+      max: 1.347
+      p50: 0.056
+      p95: 0.200
+      p99: 0.320
+    /perception/object_recognition/tracking/objects:
+      avg: 0.658
+      std: 0.537
+      min: 0.102
+      max: 5.722
+      p50: 0.511
+      p95: 1.594
+      p99: 2.988
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 1.061
+      std: 0.773
+      min: 0.142
+      max: 5.977
+      p50: 0.853
+      p95: 2.761
+      p99: 3.151
+  stacked_bar_worst:
+    /perception/object_recognition/tracking/multi_object_tracker/callback_x:
+      avg: 0.073
+      std: 0.075
+      min: 0.004
+      max: 1.347
+      p50: 0.056
+      p95: 0.200
+      p99: 0.320
+    /perception/object_recognition/tracking/objects:
+      avg: 0.658
+      std: 0.537
+      min: 0.102
+      max: 5.722
+      p50: 0.511
+      p95: 1.594
+      p99: 2.988
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 1.061
+      std: 0.773
+      min: 0.142
+      max: 5.977
+      p50: 0.853
+      p95: 2.761
+      p99: 3.151
+- target_path_name: component_planning_0
+  node_names:
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  - /planning/scenario_planning/lane_driving/motion_planning/path_optimizer
+  - /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay
+  - /planning/scenario_planning/scenario_selector
+  - /planning/scenario_planning/velocity_smoother
+  - /planning/planning_validator
+  best_avg: 58.411
+  best_std: 21.336
+  best_min: 9.458
+  best_max: 127.914
+  best_p50: 59.035
+  best_p95: 93.444
+  best_p99: 114.408
+  worst_avg: 58.411
+  worst_std: 21.336
+  worst_min: 9.458
+  worst_max: 127.914
+  worst_p50: 59.035
+  worst_p95: 93.444
+  worst_p99: 114.408
+  filename_messageflow: ''
+  filename_messageflow_short: component_planning_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_planning_0_hist_best
+  filename_timeseries_best: component_planning_0_timeseries_best
+  filename_stacked_bar_best: component_planning_0_stacked_bar_best
+  filename_hist_worst: component_planning_0_hist_worst
+  filename_timeseries_worst: component_planning_0_timeseries_worst
+  filename_stacked_bar_worst: component_planning_0_stacked_bar_worst
+  stacked_bar_best:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_x:
+      avg: 16.204
+      std: 6.642
+      min: 2.607
+      max: 42.952
+      p50: 15.618
+      p95: 28.057
+      p99: 33.531
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.398
+      std: 0.686
+      min: 0.052
+      max: 12.277
+      p50: 0.284
+      p95: 0.797
+      p99: 2.247
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 14.676
+      std: 8.688
+      min: 1.260
+      max: 69.346
+      p50: 12.913
+      p95: 31.140
+      p99: 42.963
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.671
+      std: 0.490
+      min: 0.112
+      max: 4.184
+      p50: 0.526
+      p95: 1.567
+      p99: 2.657
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.393
+      std: 1.791
+      min: 0.112
+      max: 18.886
+      p50: 1.802
+      p95: 6.079
+      p99: 9.099
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.534
+      std: 0.441
+      min: 0.045
+      max: 3.862
+      p50: 0.404
+      p95: 1.359
+      p99: 2.454
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 10.778
+      std: 7.555
+      min: 0.175
+      max: 43.885
+      p50: 9.186
+      p95: 27.286
+      p99: 35.358
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.194
+      std: 0.309
+      min: 0.027
+      max: 7.130
+      p50: 0.136
+      p95: 0.445
+      p99: 0.861
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 5.934
+      std: 3.692
+      min: 0.720
+      max: 26.710
+      p50: 4.946
+      p95: 13.003
+      p99: 18.543
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.113
+      std: 0.149
+      min: 0.021
+      max: 2.406
+      p50: 0.076
+      p95: 0.293
+      p99: 0.657
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 0.003
+      std: 0.002
+      min: 0.001
+      max: 0.046
+      p50: 0.002
+      p95: 0.006
+      p99: 0.008
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.179
+      std: 0.133
+      min: 0.039
+      max: 2.208
+      p50: 0.146
+      p95: 0.382
+      p99: 0.638
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.001
+      max: 0.059
+      p50: 0.007
+      p95: 0.016
+      p99: 0.021
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.205
+      std: 0.153
+      min: 0.046
+      max: 2.553
+      p50: 0.167
+      p95: 0.454
+      p99: 0.716
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 5.226
+      std: 4.247
+      min: 0.385
+      max: 32.574
+      p50: 4.104
+      p95: 13.494
+      p99: 21.417
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.184
+      std: 0.116
+      min: 0.051
+      max: 1.585
+      p50: 0.151
+      p95: 0.404
+      p99: 0.638
+    /planning/planning_validator/callback_2:
+      avg: 0.711
+      std: 0.461
+      min: 0.221
+      max: 5.015
+      p50: 0.565
+      p95: 1.768
+      p99: 2.210
+  stacked_bar_worst:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_x:
+      avg: 16.204
+      std: 6.642
+      min: 2.607
+      max: 42.952
+      p50: 15.618
+      p95: 28.057
+      p99: 33.531
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.398
+      std: 0.686
+      min: 0.052
+      max: 12.277
+      p50: 0.284
+      p95: 0.797
+      p99: 2.247
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 14.676
+      std: 8.688
+      min: 1.260
+      max: 69.346
+      p50: 12.913
+      p95: 31.140
+      p99: 42.963
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.671
+      std: 0.490
+      min: 0.112
+      max: 4.184
+      p50: 0.526
+      p95: 1.567
+      p99: 2.657
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.393
+      std: 1.791
+      min: 0.112
+      max: 18.886
+      p50: 1.802
+      p95: 6.079
+      p99: 9.099
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.534
+      std: 0.441
+      min: 0.045
+      max: 3.862
+      p50: 0.404
+      p95: 1.359
+      p99: 2.454
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 10.778
+      std: 7.555
+      min: 0.175
+      max: 43.885
+      p50: 9.186
+      p95: 27.286
+      p99: 35.358
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.194
+      std: 0.309
+      min: 0.027
+      max: 7.130
+      p50: 0.136
+      p95: 0.445
+      p99: 0.861
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 5.934
+      std: 3.692
+      min: 0.720
+      max: 26.710
+      p50: 4.946
+      p95: 13.003
+      p99: 18.543
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.113
+      std: 0.149
+      min: 0.021
+      max: 2.406
+      p50: 0.076
+      p95: 0.293
+      p99: 0.657
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 0.003
+      std: 0.002
+      min: 0.001
+      max: 0.046
+      p50: 0.002
+      p95: 0.006
+      p99: 0.008
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.179
+      std: 0.133
+      min: 0.039
+      max: 2.208
+      p50: 0.146
+      p95: 0.382
+      p99: 0.638
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.001
+      max: 0.059
+      p50: 0.007
+      p95: 0.016
+      p99: 0.021
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.205
+      std: 0.153
+      min: 0.046
+      max: 2.553
+      p50: 0.167
+      p95: 0.454
+      p99: 0.716
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 5.226
+      std: 4.247
+      min: 0.385
+      max: 32.574
+      p50: 4.104
+      p95: 13.494
+      p99: 21.417
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.184
+      std: 0.116
+      min: 0.051
+      max: 1.585
+      p50: 0.151
+      p95: 0.404
+      p99: 0.638
+    /planning/planning_validator/callback_2:
+      avg: 0.711
+      std: 0.461
+      min: 0.221
+      max: 5.015
+      p50: 0.565
+      p95: 1.768
+      p99: 2.210
+- target_path_name: component_control_0
+  node_names:
+  - /control/trajectory_follower/controller_node_exe
+  - /control/vehicle_cmd_gate
+  best_avg: 5.984
+  best_std: 2.592
+  best_min: 1.136
+  best_max: 15.694
+  best_p50: 6.283
+  best_p95: 9.993
+  best_p99: 11.498
+  worst_avg: 5.984
+  worst_std: 2.592
+  worst_min: 1.136
+  worst_max: 15.694
+  worst_p50: 6.283
+  worst_p95: 9.993
+  worst_p99: 11.498
+  filename_messageflow: ''
+  filename_messageflow_short: component_control_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: component_control_0_hist_best
+  filename_timeseries_best: component_control_0_timeseries_best
+  filename_stacked_bar_best: component_control_0_stacked_bar_best
+  filename_hist_worst: component_control_0_hist_worst
+  filename_timeseries_worst: component_control_0_timeseries_worst
+  filename_stacked_bar_worst: component_control_0_stacked_bar_worst
+  stacked_bar_best:
+    /control/trajectory_follower/controller_node_exe/callback_x:
+      avg: 5.006
+      std: 2.209
+      min: 0.983
+      max: 13.958
+      p50: 5.220
+      p95: 8.417
+      p99: 9.430
+    /control/trajectory_follower/control_cmd:
+      avg: 0.395
+      std: 0.509
+      min: 0.030
+      max: 6.789
+      p50: 0.243
+      p95: 1.392
+      p99: 2.473
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.583
+      std: 0.337
+      min: 0.077
+      max: 4.166
+      p50: 0.567
+      p95: 1.084
+      p99: 1.615
+  stacked_bar_worst:
+    /control/trajectory_follower/controller_node_exe/callback_x:
+      avg: 5.006
+      std: 2.209
+      min: 0.983
+      max: 13.958
+      p50: 5.220
+      p95: 8.417
+      p99: 9.430
+    /control/trajectory_follower/control_cmd:
+      avg: 0.395
+      std: 0.509
+      min: 0.030
+      max: 6.789
+      p50: 0.243
+      p95: 1.392
+      p99: 2.473
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.583
+      std: 0.337
+      min: 0.077
+      max: 4.166
+      p50: 0.567
+      p95: 1.084
+      p99: 1.615
+- target_path_name: e2e_sensing-to-localization_0
+  node_names:
+  - /sensing/lidar/right/crop_box_filter_self
+  - /sensing/lidar/right/crop_box_filter_mirror
+  - /sensing/lidar/right/distortion_corrector_node
+  - /sensing/lidar/right/ring_outlier_filter
+  - /sensing/lidar/concatenate_data
+  - /localization/util/crop_box_filter_measurement_range
+  - /localization/util/voxel_grid_downsample_filter
+  - /localization/util/random_downsample_filter
+  - /localization/pose_estimator/ndt_scan_matcher
+  - /localization/pose_twist_fusion_filter/ekf_localizer
+  - /localization/pose_twist_fusion_filter/stop_filter
+  best_avg: 79.509
+  best_std: 64.775
+  best_min: 10.676
+  best_max: 326.462
+  best_p50: 53.988
+  best_p95: 223.945
+  best_p99: 283.450
+  worst_avg: 102.715
+  worst_std: 79.479
+  worst_min: 10.676
+  worst_max: 446.820
+  worst_p50: 67.254
+  worst_p95: 260.976
+  worst_p99: 315.118
+  filename_messageflow: ''
+  filename_messageflow_short: e2e_sensing-to-localization_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: e2e_sensing-to-localization_0_hist_best
+  filename_timeseries_best: e2e_sensing-to-localization_0_timeseries_best
+  filename_stacked_bar_best: e2e_sensing-to-localization_0_stacked_bar_best
+  filename_hist_worst: e2e_sensing-to-localization_0_hist_worst
+  filename_timeseries_worst: e2e_sensing-to-localization_0_timeseries_worst
+  filename_stacked_bar_worst: e2e_sensing-to-localization_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.113
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.098
+      p95: 0.215
+      p99: 0.258
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.299
+      std: 0.200
+      min: 0.069
+      max: 2.061
+      p50: 0.255
+      p95: 0.598
+      p99: 0.720
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.063
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.051
+      p95: 0.135
+      p99: 0.190
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.378
+      std: 0.921
+      min: 0.242
+      max: 7.234
+      p50: 1.207
+      p95: 2.823
+      p99: 3.242
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.079
+      std: 0.058
+      min: 0.010
+      max: 0.356
+      p50: 0.059
+      p95: 0.176
+      p99: 0.224
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.800
+      std: 0.462
+      min: 0.163
+      max: 2.037
+      p50: 0.724
+      p95: 1.573
+      p99: 1.854
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.787
+      std: 0.886
+      min: 0.111
+      max: 8.105
+      p50: 0.543
+      p95: 2.271
+      p99: 4.833
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 35.524
+      std: 56.293
+      min: 0.369
+      max: 276.318
+      p50: 5.405
+      p95: 164.193
+      p99: 224.066
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 0.253
+      std: 0.653
+      min: 0.019
+      max: 7.573
+      p50: 0.103
+      p95: 0.751
+      p99: 3.113
+    /localization/util/crop_box_filter_measurement_range/callback_0:
+      avg: 0.924
+      std: 0.665
+      min: 0.077
+      max: 8.405
+      p50: 0.753
+      p95: 2.042
+      p99: 2.489
+    /localization/util/measurement_range/pointcloud:
+      avg: 0.380
+      std: 0.403
+      min: 0.012
+      max: 4.818
+      p50: 0.276
+      p95: 1.105
+      p99: 1.895
+    /localization/util/voxel_grid_downsample_filter/callback_0:
+      avg: 2.783
+      std: 1.629
+      min: 0.235
+      max: 11.486
+      p50: 2.429
+      p95: 5.714
+      p99: 6.634
+    /localization/util/voxel_grid_downsample/pointcloud:
+      avg: 0.157
+      std: 0.209
+      min: 0.014
+      max: 3.015
+      p50: 0.100
+      p95: 0.490
+      p99: 0.873
+    /localization/util/random_downsample_filter/callback_0:
+      avg: 0.074
+      std: 0.046
+      min: 0.015
+      max: 0.379
+      p50: 0.063
+      p95: 0.152
+      p99: 0.211
+    /localization/util/downsample/pointcloud:
+      avg: 0.370
+      std: 0.632
+      min: 0.046
+      max: 7.079
+      p50: 0.234
+      p95: 0.832
+      p99: 4.000
+    /localization/pose_estimator/ndt_scan_matcher/callback_2:
+      avg: 5.281
+      std: 2.995
+      min: 0.631
+      max: 20.001
+      p50: 4.728
+      p95: 10.748
+      p99: 13.884
+    /localization/pose_estimator/pose_with_covariance:
+      avg: 0.472
+      std: 1.230
+      min: 0.029
+      max: 13.098
+      p50: 0.139
+      p95: 2.464
+      p99: 6.385
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_1:
+      avg: 29.071
+      std: 22.388
+      min: 1.654
+      max: 106.217
+      p50: 22.538
+      p95: 77.975
+      p99: 92.170
+    /localization/pose_twist_fusion_filter/kinematic_state:
+      avg: 0.155
+      std: 0.109
+      min: 0.040
+      max: 1.984
+      p50: 0.134
+      p95: 0.269
+      p99: 0.359
+    /localization/pose_twist_fusion_filter/stop_filter/callback_0:
+      avg: 0.546
+      std: 0.298
+      min: 0.127
+      max: 1.978
+      p50: 0.545
+      p95: 0.979
+      p99: 1.141
+  stacked_bar_worst:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.112
+      std: 0.063
+      min: 0.032
+      max: 0.423
+      p50: 0.097
+      p95: 0.216
+      p99: 0.249
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.299
+      std: 0.209
+      min: 0.069
+      max: 2.061
+      p50: 0.253
+      p95: 0.610
+      p99: 0.820
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.050
+      p95: 0.135
+      p99: 0.187
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.348
+      std: 0.909
+      min: 0.239
+      max: 7.234
+      p50: 1.173
+      p95: 2.822
+      p99: 3.156
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.076
+      std: 0.056
+      min: 0.010
+      max: 0.261
+      p50: 0.056
+      p95: 0.173
+      p99: 0.219
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.788
+      std: 0.460
+      min: 0.160
+      max: 2.500
+      p50: 0.718
+      p95: 1.572
+      p99: 1.854
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.789
+      std: 0.898
+      min: 0.120
+      max: 8.105
+      p50: 0.527
+      p95: 2.303
+      p99: 4.845
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 56.360
+      std: 70.518
+      min: 0.369
+      max: 276.318
+      p50: 12.277
+      p95: 210.758
+      p99: 227.425
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 0.252
+      std: 0.649
+      min: 0.019
+      max: 7.573
+      p50: 0.105
+      p95: 0.739
+      p99: 3.113
+    /localization/util/crop_box_filter_measurement_range/callback_0:
+      avg: 0.916
+      std: 0.654
+      min: 0.077
+      max: 8.405
+      p50: 0.754
+      p95: 2.005
+      p99: 2.353
+    /localization/util/measurement_range/pointcloud:
+      avg: 0.386
+      std: 0.444
+      min: 0.012
+      max: 5.388
+      p50: 0.275
+      p95: 1.105
+      p99: 1.922
+    /localization/util/voxel_grid_downsample_filter/callback_0:
+      avg: 2.773
+      std: 1.614
+      min: 0.235
+      max: 11.486
+      p50: 2.419
+      p95: 5.554
+      p99: 6.674
+    /localization/util/voxel_grid_downsample/pointcloud:
+      avg: 0.158
+      std: 0.210
+      min: 0.014
+      max: 3.015
+      p50: 0.101
+      p95: 0.490
+      p99: 0.873
+    /localization/util/random_downsample_filter/callback_0:
+      avg: 0.074
+      std: 0.046
+      min: 0.015
+      max: 0.379
+      p50: 0.063
+      p95: 0.152
+      p99: 0.211
+    /localization/util/downsample/pointcloud:
+      avg: 0.361
+      std: 0.598
+      min: 0.046
+      max: 7.079
+      p50: 0.235
+      p95: 0.819
+      p99: 3.804
+    /localization/pose_estimator/ndt_scan_matcher/callback_2:
+      avg: 6.770
+      std: 19.921
+      min: 0.631
+      max: 340.474
+      p50: 4.828
+      p95: 11.049
+      p99: 15.099
+    /localization/pose_estimator/pose_with_covariance:
+      avg: 0.500
+      std: 1.280
+      min: 0.029
+      max: 13.098
+      p50: 0.143
+      p95: 2.746
+      p99: 6.766
+    /localization/pose_twist_fusion_filter/ekf_localizer/callback_1:
+      avg: 29.989
+      std: 22.970
+      min: 1.654
+      max: 106.217
+      p50: 23.388
+      p95: 78.372
+      p99: 93.668
+    /localization/pose_twist_fusion_filter/kinematic_state:
+      avg: 0.155
+      std: 0.109
+      min: 0.040
+      max: 1.984
+      p50: 0.134
+      p95: 0.269
+      p99: 0.359
+    /localization/pose_twist_fusion_filter/stop_filter/callback_0:
+      avg: 0.546
+      std: 0.298
+      min: 0.127
+      max: 1.978
+      p50: 0.545
+      p95: 0.979
+      p99: 1.141
+- target_path_name: e2e_sensing-to-control
+  node_names:
+  - /sensing/lidar/right/crop_box_filter_self
+  - /sensing/lidar/right/crop_box_filter_mirror
+  - /sensing/lidar/right/distortion_corrector_node
+  - /sensing/lidar/right/ring_outlier_filter
+  - /sensing/lidar/concatenate_data
+  - /perception/object_recognition/detection/centerpoint/lidar_centerpoint
+  - /perception/object_recognition/detection/object_association_merger_alpha
+  - /perception/object_recognition/detection/object_association_merger_beta
+  - /perception/object_recognition/detection/object_lanelet_filter
+  - /perception/object_recognition/tracking/multi_object_tracker
+  - /perception/object_recognition/prediction/map_based_prediction
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  - /planning/scenario_planning/lane_driving/motion_planning/path_optimizer
+  - /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay
+  - /planning/scenario_planning/scenario_selector
+  - /planning/scenario_planning/velocity_smoother
+  - /planning/planning_validator
+  - /control/trajectory_follower/controller_node_exe
+  - /control/vehicle_cmd_gate
+  best_avg: 272.390
+  best_std: 80.468
+  best_min: 84.072
+  best_max: 578.293
+  best_p50: 263.755
+  best_p95: 422.856
+  best_p99: 466.338
+  worst_avg: 315.366
+  worst_std: 92.200
+  worst_min: 84.072
+  worst_max: 627.388
+  worst_p50: 307.474
+  worst_p95: 468.286
+  worst_p99: 533.226
+  filename_messageflow: ''
+  filename_messageflow_short: e2e_sensing-to-control_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: e2e_sensing-to-control_hist_best
+  filename_timeseries_best: e2e_sensing-to-control_timeseries_best
+  filename_stacked_bar_best: e2e_sensing-to-control_stacked_bar_best
+  filename_hist_worst: e2e_sensing-to-control_hist_worst
+  filename_timeseries_worst: e2e_sensing-to-control_timeseries_worst
+  filename_stacked_bar_worst: e2e_sensing-to-control_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.113
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.097
+      p95: 0.214
+      p99: 0.243
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.297
+      std: 0.203
+      min: 0.069
+      max: 2.061
+      p50: 0.248
+      p95: 0.598
+      p99: 0.731
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.049
+      p95: 0.135
+      p99: 0.186
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.371
+      std: 0.922
+      min: 0.242
+      max: 7.234
+      p50: 1.190
+      p95: 2.831
+      p99: 3.196
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.078
+      std: 0.058
+      min: 0.010
+      max: 0.323
+      p50: 0.058
+      p95: 0.177
+      p99: 0.224
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.800
+      std: 0.465
+      min: 0.174
+      max: 2.037
+      p50: 0.719
+      p95: 1.573
+      p99: 1.886
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.780
+      std: 0.848
+      min: 0.111
+      max: 7.858
+      p50: 0.543
+      p95: 2.203
+      p99: 4.656
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 39.356
+      std: 62.386
+      min: 0.395
+      max: 290.463
+      p50: 5.562
+      p95: 192.745
+      p99: 240.796
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.239
+      std: 0.713
+      min: 0.214
+      max: 5.310
+      p50: 1.059
+      p95: 2.593
+      p99: 3.739
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 8.079
+      std: 10.739
+      min: 2.210
+      max: 45.842
+      p50: 3.452
+      p95: 34.440
+      p99: 43.822
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.431
+      std: 0.303
+      min: 0.076
+      max: 3.777
+      p50: 0.409
+      p95: 0.781
+      p99: 1.727
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 9.711
+      std: 6.830
+      min: 0.020
+      max: 93.199
+      p50: 9.582
+      p95: 18.143
+      p99: 20.821
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.185
+      std: 0.127
+      min: 0.029
+      max: 1.076
+      p50: 0.154
+      p95: 0.407
+      p99: 0.628
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.293
+      std: 0.410
+      min: 0.008
+      max: 2.651
+      p50: 0.092
+      p95: 1.259
+      p99: 1.676
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.201
+      std: 0.148
+      min: 0.048
+      max: 1.933
+      p50: 0.164
+      p95: 0.422
+      p99: 0.697
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.217
+      std: 0.302
+      min: 0.018
+      max: 3.474
+      p50: 0.124
+      p95: 0.696
+      p99: 1.491
+    /perception/object_recognition/detection/objects:
+      avg: 0.166
+      std: 0.157
+      min: 0.037
+      max: 2.302
+      p50: 0.125
+      p95: 0.335
+      p99: 0.710
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 63.357
+      std: 49.276
+      min: 0.220
+      max: 280.459
+      p50: 57.709
+      p95: 162.504
+      p99: 207.599
+    /perception/object_recognition/tracking/objects:
+      avg: 0.622
+      std: 0.493
+      min: 0.111
+      max: 3.509
+      p50: 0.477
+      p95: 1.552
+      p99: 2.748
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 0.340
+      std: 0.432
+      min: 0.017
+      max: 2.085
+      p50: 0.148
+      p95: 1.389
+      p99: 1.679
+    /perception/object_recognition/objects:
+      avg: 69.524
+      std: 38.613
+      min: 5.425
+      max: 171.997
+      p50: 62.303
+      p95: 131.613
+      p99: 159.877
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.417
+      std: 0.731
+      min: 0.066
+      max: 8.360
+      p50: 0.280
+      p95: 0.799
+      p99: 4.149
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 14.272
+      std: 8.231
+      min: 1.451
+      max: 53.012
+      p50: 12.647
+      p95: 30.051
+      p99: 39.400
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.631
+      std: 0.426
+      min: 0.136
+      max: 3.608
+      p50: 0.497
+      p95: 1.458
+      p99: 2.231
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.299
+      std: 1.653
+      min: 0.112
+      max: 9.960
+      p50: 1.719
+      p95: 5.569
+      p99: 7.895
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.498
+      std: 0.355
+      min: 0.065
+      max: 2.393
+      p50: 0.394
+      p95: 1.228
+      p99: 1.865
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 10.720
+      std: 7.488
+      min: 0.175
+      max: 41.034
+      p50: 9.326
+      p95: 27.250
+      p99: 35.499
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.211
+      std: 0.437
+      min: 0.037
+      max: 7.130
+      p50: 0.135
+      p95: 0.441
+      p99: 1.459
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 5.845
+      std: 3.452
+      min: 0.775
+      max: 20.354
+      p50: 4.922
+      p95: 12.570
+      p99: 17.225
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.109
+      std: 0.126
+      min: 0.023
+      max: 1.650
+      p50: 0.079
+      p95: 0.272
+      p99: 0.587
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 0.003
+      std: 0.002
+      min: 0.001
+      max: 0.046
+      p50: 0.002
+      p95: 0.006
+      p99: 0.009
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.175
+      std: 0.124
+      min: 0.039
+      max: 1.908
+      p50: 0.144
+      p95: 0.365
+      p99: 0.612
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.001
+      max: 0.058
+      p50: 0.007
+      p95: 0.015
+      p99: 0.021
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.205
+      std: 0.166
+      min: 0.046
+      max: 2.553
+      p50: 0.163
+      p95: 0.453
+      p99: 0.711
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 4.995
+      std: 3.806
+      min: 0.478
+      max: 26.931
+      p50: 4.036
+      p95: 11.741
+      p99: 17.963
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.182
+      std: 0.117
+      min: 0.051
+      max: 1.247
+      p50: 0.153
+      p95: 0.385
+      p99: 0.739
+    /planning/planning_validator/callback_2:
+      avg: 0.391
+      std: 0.242
+      min: 0.112
+      max: 2.566
+      p50: 0.319
+      p95: 0.904
+      p99: 1.116
+    /planning/scenario_planning/trajectory:
+      avg: 33.225
+      std: 23.136
+      min: 2.144
+      max: 113.155
+      p50: 28.215
+      p95: 78.734
+      p99: 99.336
+    /control/trajectory_follower/control_cmd:
+      avg: 0.395
+      std: 0.541
+      min: 0.036
+      max: 4.745
+      p50: 0.229
+      p95: 1.430
+      p99: 2.641
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.587
+      std: 0.349
+      min: 0.094
+      max: 3.001
+      p50: 0.575
+      p95: 1.096
+      p99: 1.603
+  stacked_bar_worst:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.112
+      std: 0.061
+      min: 0.032
+      max: 0.423
+      p50: 0.096
+      p95: 0.214
+      p99: 0.241
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.299
+      std: 0.200
+      min: 0.069
+      max: 1.606
+      p50: 0.255
+      p95: 0.602
+      p99: 0.815
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.063
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.050
+      p95: 0.136
+      p99: 0.186
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.339
+      std: 0.877
+      min: 0.239
+      max: 5.982
+      p50: 1.183
+      p95: 2.820
+      p99: 3.075
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.076
+      std: 0.055
+      min: 0.010
+      max: 0.261
+      p50: 0.056
+      p95: 0.172
+      p99: 0.214
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.789
+      std: 0.457
+      min: 0.160
+      max: 2.500
+      p50: 0.728
+      p95: 1.571
+      p99: 1.805
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.790
+      std: 0.918
+      min: 0.120
+      max: 8.105
+      p50: 0.525
+      p95: 2.315
+      p99: 4.952
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 66.961
+      std: 79.440
+      min: 0.395
+      max: 425.548
+      p50: 22.892
+      p95: 217.875
+      p99: 244.196
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.244
+      std: 0.705
+      min: 0.214
+      max: 5.310
+      p50: 1.085
+      p95: 2.584
+      p99: 3.554
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 7.875
+      std: 10.552
+      min: 2.252
+      max: 45.842
+      p50: 3.460
+      p95: 34.153
+      p99: 43.387
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.438
+      std: 0.305
+      min: 0.076
+      max: 3.777
+      p50: 0.417
+      p95: 0.802
+      p99: 1.795
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 10.397
+      std: 8.977
+      min: 0.020
+      max: 120.037
+      p50: 10.006
+      p95: 19.015
+      p99: 24.540
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.188
+      std: 0.122
+      min: 0.029
+      max: 0.938
+      p50: 0.157
+      p95: 0.421
+      p99: 0.598
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.291
+      std: 0.403
+      min: 0.008
+      max: 2.651
+      p50: 0.092
+      p95: 1.223
+      p99: 1.676
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.206
+      std: 0.151
+      min: 0.048
+      max: 1.933
+      p50: 0.167
+      p95: 0.461
+      p99: 0.697
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.226
+      std: 0.332
+      min: 0.018
+      max: 3.474
+      p50: 0.126
+      p95: 0.732
+      p99: 1.528
+    /perception/object_recognition/detection/objects:
+      avg: 0.169
+      std: 0.170
+      min: 0.037
+      max: 2.302
+      p50: 0.127
+      p95: 0.336
+      p99: 0.710
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 72.015
+      std: 51.442
+      min: 0.220
+      max: 280.459
+      p50: 67.606
+      p95: 169.693
+      p99: 212.240
+    /perception/object_recognition/tracking/objects:
+      avg: 0.617
+      std: 0.476
+      min: 0.111
+      max: 3.509
+      p50: 0.476
+      p95: 1.473
+      p99: 2.633
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 0.342
+      std: 0.434
+      min: 0.017
+      max: 2.085
+      p50: 0.149
+      p95: 1.349
+      p99: 1.679
+    /perception/object_recognition/objects:
+      avg: 74.632
+      std: 39.723
+      min: 5.617
+      max: 176.225
+      p50: 67.596
+      p95: 136.699
+      p99: 164.366
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.403
+      std: 0.663
+      min: 0.066
+      max: 8.360
+      p50: 0.282
+      p95: 0.780
+      p99: 2.960
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 14.470
+      std: 8.297
+      min: 1.451
+      max: 53.012
+      p50: 12.787
+      p95: 30.723
+      p99: 39.400
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.638
+      std: 0.426
+      min: 0.136
+      max: 3.608
+      p50: 0.499
+      p95: 1.458
+      p99: 2.231
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.341
+      std: 1.685
+      min: 0.112
+      max: 9.960
+      p50: 1.751
+      p95: 5.897
+      p99: 8.321
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.503
+      std: 0.366
+      min: 0.065
+      max: 2.771
+      p50: 0.397
+      p95: 1.253
+      p99: 1.927
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 10.933
+      std: 7.584
+      min: 0.175
+      max: 41.034
+      p50: 9.424
+      p95: 27.991
+      p99: 35.760
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.197
+      std: 0.380
+      min: 0.037
+      max: 7.130
+      p50: 0.135
+      p95: 0.436
+      p99: 0.735
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 5.880
+      std: 3.464
+      min: 0.775
+      max: 20.354
+      p50: 4.922
+      p95: 12.570
+      p99: 17.225
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.111
+      std: 0.129
+      min: 0.023
+      max: 1.650
+      p50: 0.079
+      p95: 0.277
+      p99: 0.587
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 0.355
+      std: 4.623
+      min: 0.001
+      max: 81.081
+      p50: 0.002
+      p95: 0.006
+      p99: 1.032
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.174
+      std: 0.124
+      min: 0.039
+      max: 1.908
+      p50: 0.143
+      p95: 0.365
+      p99: 0.612
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.001
+      max: 0.058
+      p50: 0.007
+      p95: 0.015
+      p99: 0.021
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.204
+      std: 0.166
+      min: 0.046
+      max: 2.553
+      p50: 0.163
+      p95: 0.453
+      p99: 0.711
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 4.993
+      std: 3.807
+      min: 0.478
+      max: 26.931
+      p50: 4.027
+      p95: 11.741
+      p99: 17.963
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.182
+      std: 0.117
+      min: 0.051
+      max: 1.247
+      p50: 0.153
+      p95: 0.385
+      p99: 0.739
+    /planning/planning_validator/callback_2:
+      avg: 0.392
+      std: 0.242
+      min: 0.121
+      max: 2.566
+      p50: 0.321
+      p95: 0.904
+      p99: 1.116
+    /planning/scenario_planning/trajectory:
+      avg: 33.534
+      std: 23.313
+      min: 2.144
+      max: 113.155
+      p50: 28.483
+      p95: 78.781
+      p99: 100.197
+    /control/trajectory_follower/control_cmd:
+      avg: 0.395
+      std: 0.541
+      min: 0.036
+      max: 4.745
+      p50: 0.229
+      p95: 1.430
+      p99: 2.641
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.587
+      std: 0.349
+      min: 0.094
+      max: 3.001
+      p50: 0.575
+      p95: 1.096
+      p99: 1.603
+- target_path_name: e2e_sensing-to-perception_0
+  node_names:
+  - /sensing/lidar/right/crop_box_filter_self
+  - /sensing/lidar/right/crop_box_filter_mirror
+  - /sensing/lidar/right/distortion_corrector_node
+  - /sensing/lidar/right/ring_outlier_filter
+  - /sensing/lidar/concatenate_data
+  - /perception/object_recognition/detection/centerpoint/lidar_centerpoint
+  - /perception/object_recognition/detection/object_association_merger_alpha
+  - /perception/object_recognition/detection/object_association_merger_beta
+  - /perception/object_recognition/detection/object_lanelet_filter
+  - /perception/object_recognition/tracking/multi_object_tracker
+  - /perception/object_recognition/prediction/map_based_prediction
+  best_avg: 119.461
+  best_std: 70.324
+  best_min: 14.138
+  best_max: 379.093
+  best_p50: 109.986
+  best_p95: 245.660
+  best_p99: 330.009
+  worst_avg: 150.524
+  worst_std: 83.335
+  worst_min: 14.138
+  worst_max: 410.383
+  worst_p50: 138.246
+  worst_p95: 313.497
+  worst_p99: 345.251
+  filename_messageflow: ''
+  filename_messageflow_short: e2e_sensing-to-perception_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: e2e_sensing-to-perception_0_hist_best
+  filename_timeseries_best: e2e_sensing-to-perception_0_timeseries_best
+  filename_stacked_bar_best: e2e_sensing-to-perception_0_stacked_bar_best
+  filename_hist_worst: e2e_sensing-to-perception_0_hist_worst
+  filename_timeseries_worst: e2e_sensing-to-perception_0_timeseries_worst
+  filename_stacked_bar_worst: e2e_sensing-to-perception_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.112
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.097
+      p95: 0.213
+      p99: 0.244
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.296
+      std: 0.202
+      min: 0.069
+      max: 2.061
+      p50: 0.246
+      p95: 0.598
+      p99: 0.721
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.049
+      p95: 0.135
+      p99: 0.191
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.362
+      std: 0.920
+      min: 0.242
+      max: 7.234
+      p50: 1.170
+      p95: 2.822
+      p99: 3.224
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.078
+      std: 0.058
+      min: 0.010
+      max: 0.356
+      p50: 0.057
+      p95: 0.176
+      p99: 0.226
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.791
+      std: 0.464
+      min: 0.163
+      max: 2.037
+      p50: 0.704
+      p95: 1.573
+      p99: 1.871
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.762
+      std: 0.822
+      min: 0.111
+      max: 7.858
+      p50: 0.535
+      p95: 2.072
+      p99: 4.494
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 37.810
+      std: 59.928
+      min: 0.369
+      max: 290.463
+      p50: 5.504
+      p95: 184.011
+      p99: 229.098
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.229
+      std: 0.708
+      min: 0.214
+      max: 5.310
+      p50: 1.046
+      p95: 2.574
+      p99: 3.639
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 8.290
+      std: 10.951
+      min: 2.210
+      max: 45.842
+      p50: 3.464
+      p95: 34.478
+      p99: 43.797
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.427
+      std: 0.293
+      min: 0.076
+      max: 3.777
+      p50: 0.409
+      p95: 0.781
+      p99: 1.637
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 9.713
+      std: 7.533
+      min: 0.020
+      max: 93.199
+      p50: 9.507
+      p95: 18.038
+      p99: 21.429
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.183
+      std: 0.126
+      min: 0.029
+      max: 1.076
+      p50: 0.151
+      p95: 0.406
+      p99: 0.638
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.283
+      std: 0.395
+      min: 0.008
+      max: 2.651
+      p50: 0.088
+      p95: 1.212
+      p99: 1.567
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.200
+      std: 0.145
+      min: 0.048
+      max: 1.933
+      p50: 0.162
+      p95: 0.420
+      p99: 0.692
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.209
+      std: 0.289
+      min: 0.018
+      max: 3.474
+      p50: 0.122
+      p95: 0.675
+      p99: 1.476
+    /perception/object_recognition/detection/objects:
+      avg: 0.164
+      std: 0.152
+      min: 0.037
+      max: 2.302
+      p50: 0.125
+      p95: 0.335
+      p99: 0.675
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 55.870
+      std: 40.859
+      min: 0.220
+      max: 208.423
+      p50: 52.612
+      p95: 132.648
+      p99: 168.582
+    /perception/object_recognition/tracking/objects:
+      avg: 0.617
+      std: 0.494
+      min: 0.102
+      max: 3.671
+      p50: 0.473
+      p95: 1.557
+      p99: 2.661
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 1.002
+      std: 0.735
+      min: 0.143
+      max: 4.224
+      p50: 0.796
+      p95: 2.653
+      p99: 3.017
+  stacked_bar_worst:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.111
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.094
+      p95: 0.214
+      p99: 0.242
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.293
+      std: 0.196
+      min: 0.069
+      max: 1.606
+      p50: 0.245
+      p95: 0.601
+      p99: 0.787
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.061
+      std: 0.042
+      min: 0.011
+      max: 0.206
+      p50: 0.048
+      p95: 0.134
+      p99: 0.184
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.319
+      std: 0.872
+      min: 0.239
+      max: 5.982
+      p50: 1.138
+      p95: 2.817
+      p99: 3.041
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.075
+      std: 0.055
+      min: 0.010
+      max: 0.261
+      p50: 0.055
+      p95: 0.172
+      p99: 0.218
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.778
+      std: 0.455
+      min: 0.160
+      max: 2.500
+      p50: 0.705
+      p95: 1.561
+      p99: 1.772
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.780
+      std: 0.909
+      min: 0.120
+      max: 8.105
+      p50: 0.517
+      p95: 2.317
+      p99: 4.849
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 62.850
+      std: 75.339
+      min: 0.369
+      max: 308.974
+      p50: 18.267
+      p95: 216.934
+      p99: 237.028
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.220
+      std: 0.699
+      min: 0.214
+      max: 5.310
+      p50: 1.046
+      p95: 2.547
+      p99: 3.472
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 8.130
+      std: 10.819
+      min: 2.210
+      max: 45.842
+      p50: 3.471
+      p95: 34.324
+      p99: 43.797
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.434
+      std: 0.297
+      min: 0.076
+      max: 3.777
+      p50: 0.416
+      p95: 0.784
+      p99: 1.659
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 10.248
+      std: 8.856
+      min: 0.020
+      max: 120.037
+      p50: 9.796
+      p95: 18.966
+      p99: 25.891
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.188
+      std: 0.128
+      min: 0.029
+      max: 1.076
+      p50: 0.156
+      p95: 0.438
+      p99: 0.638
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.279
+      std: 0.386
+      min: 0.008
+      max: 2.651
+      p50: 0.088
+      p95: 1.125
+      p99: 1.567
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.205
+      std: 0.149
+      min: 0.048
+      max: 1.933
+      p50: 0.167
+      p95: 0.461
+      p99: 0.700
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.219
+      std: 0.311
+      min: 0.018
+      max: 3.474
+      p50: 0.124
+      p95: 0.718
+      p99: 1.496
+    /perception/object_recognition/detection/objects:
+      avg: 0.168
+      std: 0.165
+      min: 0.043
+      max: 2.302
+      p50: 0.126
+      p95: 0.337
+      p99: 0.694
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 61.547
+      std: 43.010
+      min: 0.220
+      max: 208.423
+      p50: 59.312
+      p95: 140.117
+      p99: 172.623
+    /perception/object_recognition/tracking/objects:
+      avg: 0.617
+      std: 0.494
+      min: 0.102
+      max: 3.671
+      p50: 0.473
+      p95: 1.557
+      p99: 2.661
+    /perception/object_recognition/prediction/map_based_prediction/callback_1:
+      avg: 1.002
+      std: 0.735
+      min: 0.143
+      max: 4.224
+      p50: 0.796
+      p95: 2.653
+      p99: 3.017
+- target_path_name: e2e_sensing-to-perception(detection)_0
+  node_names:
+  - /sensing/lidar/right/crop_box_filter_self
+  - /sensing/lidar/right/crop_box_filter_mirror
+  - /sensing/lidar/right/distortion_corrector_node
+  - /sensing/lidar/right/ring_outlier_filter
+  - /sensing/lidar/concatenate_data
+  - /perception/object_recognition/detection/centerpoint/lidar_centerpoint
+  - /perception/object_recognition/detection/object_association_merger_alpha
+  - /perception/object_recognition/detection/object_association_merger_beta
+  - /perception/object_recognition/detection/object_lanelet_filter
+  - /perception/object_recognition/tracking/multi_object_tracker
+  best_avg: 59.553
+  best_std: 55.918
+  best_min: 7.948
+  best_max: 303.775
+  best_p50: 38.091
+  best_p95: 187.427
+  best_p99: 251.217
+  worst_avg: 80.487
+  worst_std: 70.735
+  worst_min: 8.761
+  worst_max: 322.296
+  worst_p50: 46.294
+  worst_p95: 234.852
+  worst_p99: 256.142
+  filename_messageflow: ''
+  filename_messageflow_short: e2e_sensing-to-perception(detection)_0_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: e2e_sensing-to-perception(detection)_0_hist_best
+  filename_timeseries_best: e2e_sensing-to-perception(detection)_0_timeseries_best
+  filename_stacked_bar_best: e2e_sensing-to-perception(detection)_0_stacked_bar_best
+  filename_hist_worst: e2e_sensing-to-perception(detection)_0_hist_worst
+  filename_timeseries_worst: e2e_sensing-to-perception(detection)_0_timeseries_worst
+  filename_stacked_bar_worst: e2e_sensing-to-perception(detection)_0_stacked_bar_worst
+  stacked_bar_best:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.113
+      std: 0.062
+      min: 0.032
+      max: 0.423
+      p50: 0.097
+      p95: 0.214
+      p99: 0.254
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.297
+      std: 0.200
+      min: 0.069
+      max: 2.061
+      p50: 0.250
+      p95: 0.598
+      p99: 0.720
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.050
+      p95: 0.135
+      p99: 0.190
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.366
+      std: 0.921
+      min: 0.242
+      max: 7.234
+      p50: 1.196
+      p95: 2.823
+      p99: 3.242
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.078
+      std: 0.058
+      min: 0.010
+      max: 0.356
+      p50: 0.057
+      p95: 0.174
+      p99: 0.224
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.793
+      std: 0.462
+      min: 0.163
+      max: 2.037
+      p50: 0.717
+      p95: 1.574
+      p99: 1.848
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.779
+      std: 0.880
+      min: 0.111
+      max: 8.105
+      p50: 0.532
+      p95: 2.216
+      p99: 4.831
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 35.132
+      std: 55.511
+      min: 0.369
+      max: 276.318
+      p50: 5.504
+      p95: 160.853
+      p99: 224.059
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.227
+      std: 0.704
+      min: 0.214
+      max: 5.310
+      p50: 1.063
+      p95: 2.518
+      p99: 3.733
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 8.247
+      std: 10.940
+      min: 2.210
+      max: 45.842
+      p50: 3.480
+      p95: 34.476
+      p99: 43.857
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.432
+      std: 0.299
+      min: 0.076
+      max: 3.777
+      p50: 0.414
+      p95: 0.781
+      p99: 1.688
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 9.601
+      std: 8.067
+      min: 0.020
+      max: 95.615
+      p50: 9.058
+      p95: 18.012
+      p99: 21.315
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.196
+      std: 0.135
+      min: 0.029
+      max: 1.076
+      p50: 0.160
+      p95: 0.461
+      p99: 0.662
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.296
+      std: 0.425
+      min: 0.008
+      max: 3.703
+      p50: 0.094
+      p95: 1.232
+      p99: 1.829
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.214
+      std: 0.155
+      min: 0.048
+      max: 1.933
+      p50: 0.172
+      p95: 0.501
+      p99: 0.704
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.248
+      std: 0.380
+      min: 0.018
+      max: 3.474
+      p50: 0.126
+      p95: 0.895
+      p99: 2.262
+    /perception/object_recognition/detection/objects:
+      avg: 0.172
+      std: 0.165
+      min: 0.035
+      max: 2.302
+      p50: 0.131
+      p95: 0.350
+      p99: 0.700
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 0.301
+      std: 0.255
+      min: 0.028
+      max: 1.435
+      p50: 0.218
+      p95: 0.819
+      p99: 1.173
+  stacked_bar_worst:
+    /sensing/lidar/right/self_cropped/pointcloud_ex:
+      avg: 0.112
+      std: 0.063
+      min: 0.032
+      max: 0.423
+      p50: 0.096
+      p95: 0.215
+      p99: 0.248
+    /sensing/lidar/right/crop_box_filter_mirror/callback_0:
+      avg: 0.298
+      std: 0.208
+      min: 0.069
+      max: 2.061
+      p50: 0.248
+      p95: 0.610
+      p99: 0.812
+    /sensing/lidar/right/mirror_cropped/pointcloud_ex:
+      avg: 0.062
+      std: 0.043
+      min: 0.011
+      max: 0.206
+      p50: 0.049
+      p95: 0.134
+      p99: 0.186
+    /sensing/lidar/right/distortion_corrector_node/callback_2:
+      avg: 1.339
+      std: 0.909
+      min: 0.239
+      max: 7.234
+      p50: 1.150
+      p95: 2.822
+      p99: 3.174
+    /sensing/lidar/right/rectified/pointcloud_ex:
+      avg: 0.075
+      std: 0.055
+      min: 0.010
+      max: 0.261
+      p50: 0.056
+      p95: 0.172
+      p99: 0.219
+    /sensing/lidar/right/ring_outlier_filter/callback_0:
+      avg: 0.783
+      std: 0.460
+      min: 0.160
+      max: 2.500
+      p50: 0.713
+      p95: 1.572
+      p99: 1.848
+    /sensing/lidar/right/pointcloud_before_sync:
+      avg: 0.780
+      std: 0.889
+      min: 0.120
+      max: 8.105
+      p50: 0.522
+      p95: 2.272
+      p99: 4.844
+    /sensing/lidar/concatenate_data/callback_4:
+      avg: 55.938
+      std: 70.322
+      min: 0.369
+      max: 276.318
+      p50: 11.823
+      p95: 210.847
+      p99: 227.400
+    /sensing/lidar/concatenated/pointcloud:
+      avg: 1.215
+      std: 0.688
+      min: 0.214
+      max: 5.310
+      p50: 1.050
+      p95: 2.474
+      p99: 3.445
+    /perception/object_recognition/detection/centerpoint/lidar_centerpoint/callback_0:
+      avg: 8.239
+      std: 10.942
+      min: 2.210
+      max: 45.842
+      p50: 3.471
+      p95: 34.476
+      p99: 43.857
+    /perception/object_recognition/detection/centerpoint/objects:
+      avg: 0.432
+      std: 0.299
+      min: 0.076
+      max: 3.777
+      p50: 0.415
+      p95: 0.782
+      p99: 1.688
+    /perception/object_recognition/detection/object_association_merger_alpha/callback_0:
+      avg: 9.786
+      std: 8.120
+      min: 0.020
+      max: 95.615
+      p50: 9.274
+      p95: 18.330
+      p99: 22.816
+    /perception/object_recognition/detection/temporary_merged_objects:
+      avg: 0.196
+      std: 0.135
+      min: 0.029
+      max: 1.076
+      p50: 0.160
+      p95: 0.461
+      p99: 0.662
+    /perception/object_recognition/detection/object_association_merger_beta/callback_0:
+      avg: 0.296
+      std: 0.425
+      min: 0.008
+      max: 3.703
+      p50: 0.094
+      p95: 1.232
+      p99: 1.829
+    /perception/object_recognition/detection/objects_before_filter:
+      avg: 0.214
+      std: 0.155
+      min: 0.048
+      max: 1.933
+      p50: 0.172
+      p95: 0.501
+      p99: 0.704
+    /perception/object_recognition/detection/object_lanelet_filter/callback_0:
+      avg: 0.248
+      std: 0.380
+      min: 0.018
+      max: 3.474
+      p50: 0.126
+      p95: 0.895
+      p99: 2.262
+    /perception/object_recognition/detection/objects:
+      avg: 0.172
+      std: 0.165
+      min: 0.035
+      max: 2.302
+      p50: 0.131
+      p95: 0.350
+      p99: 0.700
+    /perception/object_recognition/tracking/multi_object_tracker/callback_3:
+      avg: 0.301
+      std: 0.255
+      min: 0.028
+      max: 1.435
+      p50: 0.218
+      p95: 0.819
+      p99: 1.173
+- target_path_name: e2e_planning-to-control
+  node_names:
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  - /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  - /planning/scenario_planning/lane_driving/motion_planning/path_optimizer
+  - /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner
+  - /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay
+  - /planning/scenario_planning/scenario_selector
+  - /planning/scenario_planning/velocity_smoother
+  - /planning/planning_validator
+  - /control/trajectory_follower/controller_node_exe
+  - /control/vehicle_cmd_gate
+  best_avg: 89.679
+  best_std: 29.845
+  best_min: 21.626
+  best_max: 218.573
+  best_p50: 89.826
+  best_p95: 144.209
+  best_p99: 172.077
+  worst_avg: 97.050
+  worst_std: 34.774
+  worst_min: 21.626
+  worst_max: 222.428
+  worst_p50: 95.657
+  worst_p95: 166.574
+  worst_p99: 197.180
+  filename_messageflow: ''
+  filename_messageflow_short: e2e_planning-to-control_messageflow_short
+  filename_hist_total: ''
+  filename_hist_best: e2e_planning-to-control_hist_best
+  filename_timeseries_best: e2e_planning-to-control_timeseries_best
+  filename_stacked_bar_best: e2e_planning-to-control_stacked_bar_best
+  filename_hist_worst: e2e_planning-to-control_hist_worst
+  filename_timeseries_worst: e2e_planning-to-control_timeseries_worst
+  filename_stacked_bar_worst: e2e_planning-to-control_stacked_bar_worst
+  stacked_bar_best:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_x:
+      avg: 15.731
+      std: 6.529
+      min: 2.607
+      max: 42.952
+      p50: 15.255
+      p95: 27.579
+      p99: 33.262
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.391
+      std: 0.710
+      min: 0.052
+      max: 12.277
+      p50: 0.277
+      p95: 0.753
+      p99: 2.085
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 13.914
+      std: 8.153
+      min: 1.260
+      max: 69.346
+      p50: 12.359
+      p95: 29.089
+      p99: 38.413
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.635
+      std: 0.448
+      min: 0.112
+      max: 4.184
+      p50: 0.503
+      p95: 1.455
+      p99: 2.277
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.316
+      std: 1.751
+      min: 0.112
+      max: 18.886
+      p50: 1.738
+      p95: 5.987
+      p99: 8.980
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.504
+      std: 0.403
+      min: 0.045
+      max: 3.862
+      p50: 0.383
+      p95: 1.279
+      p99: 2.104
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 10.240
+      std: 7.174
+      min: 0.175
+      max: 41.034
+      p50: 8.783
+      p95: 25.944
+      p99: 34.620
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.189
+      std: 0.320
+      min: 0.027
+      max: 7.130
+      p50: 0.132
+      p95: 0.417
+      p99: 0.936
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 5.713
+      std: 3.409
+      min: 0.720
+      max: 24.020
+      p50: 4.849
+      p95: 12.300
+      p99: 17.259
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.108
+      std: 0.136
+      min: 0.021
+      max: 2.406
+      p50: 0.075
+      p95: 0.270
+      p99: 0.594
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 0.003
+      std: 0.002
+      min: 0.001
+      max: 0.046
+      p50: 0.002
+      p95: 0.006
+      p99: 0.009
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.174
+      std: 0.125
+      min: 0.039
+      max: 2.208
+      p50: 0.145
+      p95: 0.353
+      p99: 0.604
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.001
+      max: 0.059
+      p50: 0.007
+      p95: 0.015
+      p99: 0.020
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.200
+      std: 0.145
+      min: 0.046
+      max: 2.553
+      p50: 0.165
+      p95: 0.422
+      p99: 0.665
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 5.029
+      std: 3.911
+      min: 0.385
+      max: 32.574
+      p50: 4.021
+      p95: 12.476
+      p99: 17.786
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.183
+      std: 0.116
+      min: 0.051
+      max: 1.585
+      p50: 0.152
+      p95: 0.397
+      p99: 0.639
+    /planning/planning_validator/callback_2:
+      avg: 0.398
+      std: 0.265
+      min: 0.112
+      max: 4.048
+      p50: 0.318
+      p95: 0.976
+      p99: 1.186
+    /planning/scenario_planning/trajectory:
+      avg: 32.983
+      std: 23.199
+      min: 1.734
+      max: 179.429
+      p50: 28.283
+      p95: 78.000
+      p99: 101.520
+    /control/trajectory_follower/control_cmd:
+      avg: 0.392
+      std: 0.532
+      min: 0.032
+      max: 4.985
+      p50: 0.229
+      p95: 1.420
+      p99: 2.693
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.568
+      std: 0.336
+      min: 0.078
+      max: 3.001
+      p50: 0.555
+      p95: 1.064
+      p99: 1.553
+  stacked_bar_worst:
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner/callback_x:
+      avg: 16.529
+      std: 6.590
+      min: 2.607
+      max: 41.436
+      p50: 15.878
+      p95: 28.428
+      p99: 33.538
+    /planning/scenario_planning/lane_driving/behavior_planning/path_with_lane_id:
+      avg: 0.364
+      std: 0.434
+      min: 0.052
+      max: 12.277
+      p50: 0.290
+      p95: 0.749
+      p99: 1.352
+    /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner/callback_13:
+      avg: 15.080
+      std: 8.837
+      min: 1.260
+      max: 69.346
+      p50: 13.368
+      p95: 31.858
+      p99: 43.726
+    /planning/scenario_planning/lane_driving/behavior_planning/path:
+      avg: 0.693
+      std: 0.504
+      min: 0.117
+      max: 4.184
+      p50: 0.540
+      p95: 1.644
+      p99: 2.852
+    /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother/callback_1:
+      avg: 2.491
+      std: 1.832
+      min: 0.498
+      max: 18.886
+      p50: 1.872
+      p95: 6.282
+      p99: 9.280
+    /planning/scenario_planning/lane_driving/motion_planning/path_smoother/path:
+      avg: 0.543
+      std: 0.444
+      min: 0.045
+      max: 3.266
+      p50: 0.414
+      p95: 1.368
+      p99: 2.483
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/callback_2:
+      avg: 11.149
+      std: 7.670
+      min: 0.416
+      max: 43.885
+      p50: 9.433
+      p95: 27.961
+      p99: 35.412
+    /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/trajectory:
+      avg: 0.177
+      std: 0.123
+      min: 0.027
+      max: 1.152
+      p50: 0.137
+      p95: 0.438
+      p99: 0.610
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/callback_6:
+      avg: 6.010
+      std: 3.764
+      min: 0.720
+      max: 26.710
+      p50: 4.993
+      p95: 13.325
+      p99: 18.770
+    /planning/scenario_planning/lane_driving/motion_planning/motion_velocity_planner/trajectory:
+      avg: 0.117
+      std: 0.156
+      min: 0.021
+      max: 2.406
+      p50: 0.078
+      p95: 0.319
+      p99: 0.696
+    /planning/scenario_planning/lane_driving/motion_planning/obstacle_stop_relay/callback_1:
+      avg: 1.644
+      std: 9.491
+      min: 0.001
+      max: 89.488
+      p50: 0.002
+      p95: 0.009
+      p99: 63.248
+    /planning/scenario_planning/lane_driving/trajectory:
+      avg: 0.178
+      std: 0.130
+      min: 0.053
+      max: 2.208
+      p50: 0.146
+      p95: 0.369
+      p99: 0.618
+    /planning/scenario_planning/scenario_selector/callback_1:
+      avg: 0.008
+      std: 0.004
+      min: 0.002
+      max: 0.059
+      p50: 0.007
+      p95: 0.015
+      p99: 0.021
+    /planning/scenario_planning/scenario_selector/trajectory:
+      avg: 0.200
+      std: 0.135
+      min: 0.046
+      max: 2.553
+      p50: 0.166
+      p95: 0.435
+      p99: 0.645
+    /planning/scenario_planning/velocity_smoother/callback_4:
+      avg: 5.144
+      std: 4.126
+      min: 0.385
+      max: 32.574
+      p50: 4.039
+      p95: 13.167
+      p99: 19.186
+    /planning/scenario_planning/velocity_smoother/trajectory:
+      avg: 0.185
+      std: 0.116
+      min: 0.054
+      max: 1.585
+      p50: 0.152
+      p95: 0.400
+      p99: 0.634
+    /planning/planning_validator/callback_2:
+      avg: 0.401
+      std: 0.269
+      min: 0.121
+      max: 4.048
+      p50: 0.318
+      p95: 0.998
+      p99: 1.196
+    /planning/scenario_planning/trajectory:
+      avg: 35.178
+      std: 24.691
+      min: 1.734
+      max: 179.429
+      p50: 29.718
+      p95: 82.800
+      p99: 103.494
+    /control/trajectory_follower/control_cmd:
+      avg: 0.392
+      std: 0.532
+      min: 0.032
+      max: 4.985
+      p50: 0.229
+      p95: 1.420
+      p99: 2.693
+    /control/vehicle_cmd_gate/callback_19:
+      avg: 0.568
+      std: 0.336
+      min: 0.078
+      max: 3.001
+      p50: 0.555
+      p95: 1.064
+      p99: 1.553

@@ -1,0 +1,11 @@
+- topic_name: /system/mrm/emergency_stop/status
+  publish_node_name: /system/mrm_emergency_stop_operator
+  subscribe_node_name: /system/mrm_handler
+  filename: PERIOD_system_mrm_emergency_stop_status_0_system_mrm_handler
+  avg: 45.517
+  std: 30.798
+  min: 4.742
+  max: 218.340
+  p50: 40.648
+  p95: 94.912
+  p99: 114.482

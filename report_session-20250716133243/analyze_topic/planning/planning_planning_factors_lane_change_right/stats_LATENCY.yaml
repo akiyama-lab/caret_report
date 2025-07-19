@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/lane_change_right
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: LATENCY_planning_planning_factors_lane_change_right_0_adapi_node_planning
+  avg: 0.608
+  std: 0.537
+  min: 0.028
+  max: 4.013
+  p50: 0.448
+  p95: 1.668
+  p99: 2.736

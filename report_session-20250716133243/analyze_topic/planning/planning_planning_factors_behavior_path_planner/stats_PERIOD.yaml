@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_factors/behavior_path_planner
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /adapi/node/planning
+  filename: PERIOD_planning_planning_factors_behavior_path_planner_0_adapi_node_planning
+  avg: 100.045
+  std: 27.635
+  min: 6.707
+  max: 224.236
+  p50: 99.530
+  p95: 145.226
+  p99: 187.097

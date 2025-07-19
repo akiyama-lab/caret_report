@@ -1,0 +1,11 @@
+- topic_name: /system/emergency_holding
+  publish_node_name: /system/mrm_handler
+  subscribe_node_name: /system/hazard_status_converter
+  filename: PERIOD_system_emergency_holding_0_system_hazard_status_converter
+  avg: 100.242
+  std: 26.381
+  min: 7.837
+  max: 236.806
+  p50: 101.292
+  p95: 141.830
+  p99: 184.510

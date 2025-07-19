@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/left/pointcloud_before_sync
+  publish_node_name: /sensing/lidar/left/ring_outlier_filter
+  subscribe_node_name: /sensing/lidar/concatenate_data
+  filename: PERIOD_sensing_lidar_left_pointcloud_before_sync_0_sensing_lidar_concatenate_data
+  avg: 210.199
+  std: 175.459
+  min: 58.908
+  max: 1605.966
+  p50: 164.401
+  p95: 528.156
+  p99: 898.130

@@ -1,0 +1,224 @@
+/raw_vehicle_cmd_converter:
+  filename_timeseries:
+    Frequency: Frequency_raw_vehicle_cmd_converter
+    Period: Period_raw_vehicle_cmd_converter
+    Latency: Latency_raw_vehicle_cmd_converter
+  callbacks:
+    /raw_vehicle_cmd_converter/callback_0:
+      callback_legend: subscription_0
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<nav_msgs::msg::Odometry_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<nav_msgs::msg::Odometry_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /localization/kinematic_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /raw_vehicle_cmd_converter/callback_1:
+      callback_legend: subscription_1
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<geometry_msgs::msg::AccelWithCovarianceStamped_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /raw_vehicle_cmd_converter/input/accel
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /raw_vehicle_cmd_converter/callback_2:
+      callback_legend: subscription_2
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_adapi_v1_msgs::msg::OperationModeState_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /raw_vehicle_cmd_converter/input/operation_mode_state
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /raw_vehicle_cmd_converter/callback_3:
+      callback_legend: subscription_3
+      callback_symbol: autoware_utils_rclcpp::InterProcessPollingSubscriber<autoware_control_msgs::msg::ControlHorizon_<std::allocator<void>
+        >, autoware_utils_rclcpp::polling_policy::Latest>::InterProcessPollingSubscriber(rclcpp::Node*,
+        std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>
+        > const&, rclcpp::QoS const&)::{lambda(std::shared_ptr<autoware_control_msgs::msg::ControlHorizon_<std::allocator<void>
+        > const>)#1}
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /raw_vehicle_cmd_converter/input/control_horizon
+      Frequency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Period:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+      Latency:
+        avg: '---'
+        std: '---'
+        min: '---'
+        max: '---'
+        p50: '---'
+        p95: '---'
+        p99: '---'
+        filename_hist: ''
+    /raw_vehicle_cmd_converter/callback_4:
+      callback_legend: subscription_4
+      callback_symbol: std::_Bind<void (autoware::raw_vehicle_cmd_converter::RawVehicleCommandConverterNode::*(autoware::raw_vehicle_cmd_converter::RawVehicleCommandConverterNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_vehicle_msgs::msg::SteeringReport_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /vehicle/status/steering_status
+      Frequency:
+        avg: 19.509
+        std: 2.626
+        min: 13.000
+        max: 24.000
+        p50: 20.000
+        p95: 23.000
+        p99: 24.000
+        filename_hist: Frequency_raw_vehicle_cmd_converter_callback_4_hist
+      Period:
+        avg: 51.287
+        std: 33.568
+        min: 2.497
+        max: 219.256
+        p50: 53.098
+        p95: 101.825
+        p99: 117.100
+        filename_hist: Period_raw_vehicle_cmd_converter_callback_4_hist
+      Latency:
+        avg: 0.003
+        std: 0.004
+        min: 0.001
+        max: 0.148
+        p50: 0.003
+        p95: 0.005
+        p99: 0.010
+        filename_hist: Latency_raw_vehicle_cmd_converter_callback_4_hist
+    /raw_vehicle_cmd_converter/callback_5:
+      callback_legend: subscription_5
+      callback_symbol: std::_Bind<void (autoware::raw_vehicle_cmd_converter::RawVehicleCommandConverterNode::*(autoware::raw_vehicle_cmd_converter::RawVehicleCommandConverterNode*,
+        std::_Placeholder<1>))(std::shared_ptr<autoware_control_msgs::msg::Control_<std::allocator<void>
+        > const>)>
+      callback_type: subscription_callback
+      period_ns: -1.000
+      subscribe_topic_name: /control/command/control_cmd
+      Frequency:
+        avg: 24.129
+        std: 6.177
+        min: 14.000
+        max: 54.000
+        p50: 25.000
+        p95: 31.300
+        p99: 44.000
+        filename_hist: Frequency_raw_vehicle_cmd_converter_callback_5_hist
+      Period:
+        avg: 41.410
+        std: 31.619
+        min: 0.215
+        max: 196.851
+        p50: 34.561
+        p95: 97.931
+        p99: 114.582
+        filename_hist: Period_raw_vehicle_cmd_converter_callback_5_hist
+      Latency:
+        avg: 0.103
+        std: 0.064
+        min: 0.007
+        max: 1.797
+        p50: 0.097
+        p95: 0.185
+        p99: 0.251
+        filename_hist: Latency_raw_vehicle_cmd_converter_callback_5_hist

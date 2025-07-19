@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/lane_driving/behavior_planning/path
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_velocity_planner
+  subscribe_node_name: /planning/scenario_planning/lane_driving/motion_planning/elastic_band_smoother
+  filename: LATENCY_planning_scenario_planning_lane_driving_behavior_planning_path_0_planning_scenario_planning_lane_driving_motion_
+  avg: 0.671
+  std: 0.489
+  min: 0.112
+  max: 4.184
+  p50: 0.526
+  p95: 1.566
+  p99: 2.642

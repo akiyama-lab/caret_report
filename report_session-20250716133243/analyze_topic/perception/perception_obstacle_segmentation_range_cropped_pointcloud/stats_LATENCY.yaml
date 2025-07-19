@@ -1,0 +1,11 @@
+- topic_name: /perception/obstacle_segmentation/range_cropped/pointcloud
+  publish_node_name: /perception/obstacle_segmentation/crop_box_filter
+  subscribe_node_name: /perception/obstacle_segmentation/common_ground_filter
+  filename: LATENCY_perception_obstacle_segmentation_range_cropped_pointcloud_0_perception_obstacle_segmentation_common_ground_filte
+  avg: 0.406
+  std: 0.460
+  min: 0.014
+  max: 5.082
+  p50: 0.267
+  p95: 1.172
+  p99: 2.320

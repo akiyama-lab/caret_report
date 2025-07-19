@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/parking/costmap_generator/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/parking/costmap_generator
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_planning_scenario_planning_parking_costmap_generator_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 100.072
+  std: 27.944
+  min: 8.780
+  max: 218.011
+  p50: 101.503
+  p95: 154.501
+  p99: 182.422

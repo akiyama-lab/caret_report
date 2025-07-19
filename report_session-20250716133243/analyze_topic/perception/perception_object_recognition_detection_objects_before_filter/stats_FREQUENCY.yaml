@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/objects_before_filter
+  publish_node_name: /perception/object_recognition/detection/object_association_merger_beta
+  subscribe_node_name: /perception/object_recognition/detection/object_lanelet_filter
+  filename: FREQUENCY_perception_object_recognition_detection_objects_before_filter_0_perception_object_recognition_detection_object
+  avg: 6.824
+  std: 1.540
+  min: 2.000
+  max: 10.000
+  p50: 7.000
+  p95: 9.000
+  p99: 10.000

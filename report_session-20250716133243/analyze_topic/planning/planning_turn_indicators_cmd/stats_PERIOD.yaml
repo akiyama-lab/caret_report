@@ -1,0 +1,11 @@
+- topic_name: /planning/turn_indicators_cmd
+  publish_node_name: /planning/scenario_planning/lane_driving/behavior_planning/behavior_path_planner
+  subscribe_node_name: /control/vehicle_cmd_gate
+  filename: PERIOD_planning_turn_indicators_cmd_0_control_vehicle_cmd_gate
+  avg: 100.045
+  std: 27.579
+  min: 6.777
+  max: 224.411
+  p50: 99.473
+  p95: 144.990
+  p99: 187.154

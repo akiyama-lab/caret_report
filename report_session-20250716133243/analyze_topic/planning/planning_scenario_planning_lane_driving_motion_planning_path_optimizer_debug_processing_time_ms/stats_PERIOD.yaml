@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/lane_driving/motion_planning/path_optimizer
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_planning_scenario_planning_lane_driving_motion_planning_path_optimizer_debug_processing_time_ms_0_system_processi
+  avg: 100.051
+  std: 36.201
+  min: 0.544
+  max: 215.938
+  p50: 100.286
+  p95: 159.653
+  p99: 197.944

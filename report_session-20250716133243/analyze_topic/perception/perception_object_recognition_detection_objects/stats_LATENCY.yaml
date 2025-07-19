@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/objects
+  publish_node_name: /perception/object_recognition/detection/object_lanelet_filter
+  subscribe_node_name: /perception/object_recognition/tracking/multi_object_tracker
+  filename: LATENCY_perception_object_recognition_detection_objects_0_perception_object_recognition_tracking_multi_object_tracker
+  avg: 0.172
+  std: 0.156
+  min: 0.035
+  max: 2.302
+  p50: 0.136
+  p95: 0.367
+  p99: 0.690

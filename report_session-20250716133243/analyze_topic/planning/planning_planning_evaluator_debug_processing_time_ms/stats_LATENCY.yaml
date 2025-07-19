@@ -1,0 +1,11 @@
+- topic_name: /planning/planning_evaluator/debug/processing_time_ms
+  publish_node_name: /planning/planning_evaluator
+  subscribe_node_name: /system/processing_time_checker
+  filename: LATENCY_planning_planning_evaluator_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 0.270
+  std: 0.306
+  min: 0.022
+  max: 5.654
+  p50: 0.205
+  p95: 0.677
+  p99: 1.647

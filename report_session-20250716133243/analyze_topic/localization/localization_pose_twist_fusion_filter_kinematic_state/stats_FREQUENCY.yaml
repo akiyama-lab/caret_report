@@ -1,0 +1,11 @@
+- topic_name: /localization/pose_twist_fusion_filter/kinematic_state
+  publish_node_name: /localization/pose_twist_fusion_filter/ekf_localizer
+  subscribe_node_name: /localization/pose_twist_fusion_filter/stop_filter
+  filename: FREQUENCY_localization_pose_twist_fusion_filter_kinematic_state_0_localization_pose_twist_fusion_filter_stop_filter
+  avg: 27.082
+  std: 5.497
+  min: 4.000
+  max: 37.000
+  p50: 29.000
+  p95: 34.550
+  p99: 37.000

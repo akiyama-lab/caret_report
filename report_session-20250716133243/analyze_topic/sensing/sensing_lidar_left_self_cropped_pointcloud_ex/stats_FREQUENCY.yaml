@@ -1,0 +1,11 @@
+- topic_name: /sensing/lidar/left/self_cropped/pointcloud_ex
+  publish_node_name: /sensing/lidar/left/crop_box_filter_self
+  subscribe_node_name: /sensing/lidar/left/crop_box_filter_mirror
+  filename: FREQUENCY_sensing_lidar_left_self_cropped_pointcloud_ex_0_sensing_lidar_left_crop_box_filter_mirror
+  avg: 4.760
+  std: 1.808
+  min: 0.000
+  max: 9.000
+  p50: 5.000
+  p95: 7.700
+  p99: 8.340

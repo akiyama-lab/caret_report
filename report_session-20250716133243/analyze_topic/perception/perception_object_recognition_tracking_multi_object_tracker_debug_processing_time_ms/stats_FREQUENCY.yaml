@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/tracking/multi_object_tracker/debug/processing_time_ms
+  publish_node_name: /perception/object_recognition/tracking/multi_object_tracker
+  subscribe_node_name: /system/processing_time_checker
+  filename: FREQUENCY_perception_object_recognition_tracking_multi_object_tracker_debug_processing_time_ms_0_system_processing_time_
+  avg: 8.438
+  std: 0.722
+  min: 6.000
+  max: 10.000
+  p50: 8.000
+  p95: 9.000
+  p99: 10.000

@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/scenario_selector/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/scenario_selector
+  subscribe_node_name: /system/processing_time_checker
+  filename: FREQUENCY_planning_scenario_planning_scenario_selector_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 9.987
+  std: 0.338
+  min: 9.000
+  max: 11.000
+  p50: 10.000
+  p95: 10.150
+  p99: 11.000

@@ -1,0 +1,11 @@
+- topic_name: /perception/object_recognition/detection/detection_by_tracker/objects
+  publish_node_name: /perception/object_recognition/detection/detection_by_tracker/detection_by_tracker_node
+  subscribe_node_name: /perception/object_recognition/detection/object_association_merger_beta
+  filename: PERIOD_perception_object_recognition_detection_detection_by_tracker_objects_0_perception_object_recognition_detection_ob
+  avg: 145.949
+  std: 91.410
+  min: 0.293
+  max: 518.996
+  p50: 116.327
+  p95: 309.628
+  p99: 375.312

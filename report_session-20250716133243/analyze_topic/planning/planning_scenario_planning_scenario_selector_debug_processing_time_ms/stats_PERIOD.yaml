@@ -1,0 +1,11 @@
+- topic_name: /planning/scenario_planning/scenario_selector/debug/processing_time_ms
+  publish_node_name: /planning/scenario_planning/scenario_selector
+  subscribe_node_name: /system/processing_time_checker
+  filename: PERIOD_planning_scenario_planning_scenario_selector_debug_processing_time_ms_0_system_processing_time_checker
+  avg: 100.178
+  std: 21.017
+  min: 10.167
+  max: 205.659
+  p50: 101.052
+  p95: 133.721
+  p99: 165.038

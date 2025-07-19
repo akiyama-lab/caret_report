@@ -1,0 +1,11 @@
+- topic_name: /system/emergency/gear_cmd
+  publish_node_name: /system/mrm_handler
+  subscribe_node_name: /control/vehicle_cmd_gate
+  filename: PERIOD_system_emergency_gear_cmd_0_control_vehicle_cmd_gate
+  avg: 100.242
+  std: 26.378
+  min: 7.840
+  max: 236.815
+  p50: 101.304
+  p95: 141.830
+  p99: 184.516
