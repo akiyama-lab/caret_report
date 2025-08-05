@@ -1,7 +1,9 @@
 #!/bin/sh
 
 export component_list_json=./component_list.json
-export target_path_json=./target_path.json
+# export target_path_json=./target_path.json
+# export target_path_json=./target_path_rosbag.json
+export target_path_json=./target_path_awsim.json
 # export target_path_json=./target_path_latest.json
 export max_node_depth=20
 export timeout=120
@@ -19,7 +21,10 @@ export is_html_only=false
 export find_valid_duration=false
 export duration=0
 
-export trace_data=~/work/caret_tracedata/universe/session-20231114050140/session-20231114050140
+# export trace_data=/home/akilab/caret_report/measurement/session-20250423133921
+# export trace_data=/home/akilab/caret_report/measurement/session-20250528141503
+# export trace_data=/home/akilab/caret_report/measurement/session-20250701155637
+export trace_data=/home/akilab/caret_report/measurement/session-20250716133243
 
 # Create analysis report
 sh ../report/report_analysis/make_report.sh
