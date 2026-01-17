@@ -20,11 +20,15 @@ from pathlib import Path
 import sys
 import yaml
 import flask
+import os
+
 
 app = flask.Flask(__name__)
 
 
-def render_page(stats, title, sub_title, destination_path, template_path):
+def render_page(stats, title, sub_title, destination_path, template_path,
+                message_flow_start=None, message_flow_end=None,
+                message_flow_trigger=None, message_flow_margin_s=None):
     """Render html page"""
     with app.app_context():
         with open(template_path, 'r', encoding='utf-8') as f_html:
@@ -34,6 +38,10 @@ def render_page(stats, title, sub_title, destination_path, template_path):
                 title=title,
                 sub_title=sub_title,
                 stats=stats,
+                message_flow_start=message_flow_start,
+                message_flow_end=message_flow_end,
+                message_flow_trigger=message_flow_trigger,
+                message_flow_margin_s=message_flow_margin_s,
             )
 
         with open(destination_path, 'w', encoding='utf-8') as f_html:
@@ -45,6 +53,18 @@ def make_report(stats_path: str):
     stats = None
     with open(stats_path, 'r', encoding='utf-8') as f_yaml:
         stats = yaml.safe_load(f_yaml)
+
+    # Get message flow parameters from environment
+    message_flow_start = os.environ.get('message_flow_start')
+    message_flow_end = os.environ.get('message_flow_end')
+    message_flow_trigger = os.environ.get('message_flow_trigger')
+    message_flow_margin_s = os.environ.get('message_flow_margin_s')
+
+    # Convert empty strings to None
+    message_flow_start = int(message_flow_start) if message_flow_start and message_flow_start != '0' else None
+    message_flow_end = int(message_flow_end) if message_flow_end and message_flow_end != '0' else None
+    message_flow_trigger = int(message_flow_trigger) if message_flow_trigger else None
+    message_flow_margin_s = float(message_flow_margin_s) if message_flow_margin_s else None
 
     stats_dir = Path(stats_path).resolve().parent
     destination_path = f'{stats_dir}/index.html'
@@ -59,7 +79,11 @@ def make_report(stats_path: str):
         template_path = f'{Path(__file__).resolve().parent}/template_path_detail.html'
         title = f'Path: {target_path_name}'
         sub_title = stats_path.split('/')[-3]
-        render_page(path_info, title, sub_title, destination_path, template_path)
+        render_page(path_info, title, sub_title, destination_path, template_path,
+                   message_flow_start=message_flow_start,
+                   message_flow_end=message_flow_end,
+                   message_flow_trigger=message_flow_trigger,
+                   message_flow_margin_s=message_flow_margin_s)
 
 
 def parse_arg():

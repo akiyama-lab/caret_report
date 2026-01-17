@@ -31,14 +31,29 @@ fi
 if ${use_python}; then
     find_valid_duration=${find_valid_duration:-false}
     duration=${duration:-1200}
+    message_flow_start=${message_flow_start:-NONE}
+    message_flow_end=${message_flow_end:-NONE}
+    message_flow_trigger=${message_flow_trigger:-NONE}
+    message_flow_margin_s=${message_flow_margin_s:-NONE}
 
     if ! ${is_html_only}; then
+        # Build optional args for message_flow only when values are provided
+        mf_start_arg=""; mf_end_arg=""; mf_trigger_arg=""; mf_margin_arg=""
+        [ -n "${message_flow_start}" ] && [ "${message_flow_start}" != "NONE" ] && mf_start_arg="--message_flow_start ${message_flow_start}"
+        [ -n "${message_flow_end}" ] && [ "${message_flow_end}" != "NONE" ] && mf_end_arg="--message_flow_end ${message_flow_end}"
+        [ -n "${message_flow_trigger}" ] && [ "${message_flow_trigger}" != "NONE" ] && mf_trigger_arg="--message_flow_trigger ${message_flow_trigger}"
+        [ -n "${message_flow_margin_s}" ] && [ "${message_flow_margin_s}" != "NONE" ] && mf_margin_arg="--message_flow_margin_s ${message_flow_margin_s}"
+
         # Analyze
         python3 "${script_path}"/report_analysis/analyze_all.py "${trace_data}" "${report_dir_name}" \
             --sub_trace_data="${sub_trace_data}" \
             --component_list_json="${component_list_json}" \
             --start_strip "${start_strip}" \
             --end_strip "${end_strip}" \
+            ${mf_start_arg} \
+            ${mf_end_arg} \
+            ${mf_trigger_arg} \
+            ${mf_margin_arg} \
             --sim_time "${sim_time}" \
             --target_path_json="${target_path_json}" \
             --architecture_file_path=architecture_path.yaml \
@@ -47,6 +62,7 @@ if ${use_python}; then
             --find_valid_duration="${find_valid_duration}" \
             --duration="${duration}" \
             --is_path_analysis_only="${is_path_analysis_only}" \
+            -m "${draw_all_message_flow}" \
             -f -v
     fi
 
@@ -57,9 +73,16 @@ if ${use_python}; then
     python3 "${script_path}"/analyze_topic/make_report_analyze_topic.py "${report_dir_name}"
     python3 "${script_path}"/report_analysis/make_html_analysis.py "${trace_data}" "${report_dir_name}" --note_text_top "${note_text_top}" --note_text_bottom "${note_text_bottom}" --num_back 3
 else
+    # Build optional args for message_flow only if variables are set
+    mf_start_arg=""; mf_end_arg=""; mf_trigger_arg=""; mf_margin_arg=""
+    [ -n "${message_flow_start}" ] && mf_start_arg="--message_flow_start ${message_flow_start}"
+    [ -n "${message_flow_end}" ] && mf_end_arg="--message_flow_end ${message_flow_end}"
+    [ -n "${message_flow_trigger}" ] && mf_trigger_arg="--message_flow_trigger ${message_flow_trigger}"
+    [ -n "${message_flow_margin_s}" ] && mf_margin_arg="--message_flow_margin_s ${message_flow_margin_s}"
+
     # Path analysis
     python3 "${script_path}"/analyze_path/add_path_to_architecture.py "${trace_data}" --target_path_json="${target_path_json}" --architecture_file_path=architecture_path.yaml --max_node_depth="${max_node_depth}" --timeout="${timeout}" -v
-    python3 "${script_path}"/analyze_path/analyze_path.py "${trace_data}" "${report_dir_name}" --architecture_file_path=architecture_path.yaml --start_strip "${start_strip}" --end_strip "${end_strip}" --sim_time "${sim_time}" -f -v -m "${draw_all_message_flow}"
+    python3 "${script_path}"/analyze_path/analyze_path.py "${trace_data}" "${report_dir_name}" --architecture_file_path=architecture_path.yaml --start_strip "${start_strip}" --end_strip "${end_strip}" ${mf_start_arg} ${mf_end_arg} ${mf_trigger_arg} ${mf_margin_arg} --sim_time "${sim_time}" -f -v -m "${draw_all_message_flow}"
     python3 "${script_path}"/analyze_path/make_report_analyze_path.py "${report_dir_name}"
 
     # Track of response time

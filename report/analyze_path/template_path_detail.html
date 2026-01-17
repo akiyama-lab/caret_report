@@ -41,7 +41,19 @@
         {% endfor %}
       </ul>
 
-      <h4>Message Flow (参考のため一部を抜粋)</h4>
+      {% if message_flow_start is not none or message_flow_end is not none or message_flow_trigger is not none %}
+      <h4>Message Flow (obstacle_stopに注目)</h4>
+      <div class="alert alert-info" role="alert">
+        <strong>Time Window:</strong>
+        {% if message_flow_trigger is not none %}
+          Trigger: {{ message_flow_trigger }} ({{ message_flow_margin_s }}s before/after)
+        {% elif message_flow_start is not none and message_flow_end is not none %}
+          Absolute: {{ message_flow_start }} - {{ message_flow_end }}
+        {% endif %}
+      </div>
+      {% else %}
+        <h4>Message Flow(参考のため一部を抜粋)</h4>
+      {% endif %}
       {% if path_info.filename_messageflow != "" %}
       <a href="{{ path_info.filename_messageflow }}.html" target="_blank"> message flow (full) </a>
       <br />

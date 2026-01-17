@@ -192,9 +192,38 @@ def analyze_path(args, dest_dir: str, arch: Architecture, app: Application, targ
         _logger.warning(f'    No-traffic and No-input in the path: {target_path_name}')
         return stats
 
-    graph_short = Plot.create_message_flow_plot(target_path,
-                lstrip_s=duration / 2,
-                rstrip_s=max(duration / 2 - (3 + 0.1), 0)).figure(full_legends=True)
+    # Handle message_flow_trigger and message_flow_margin_s
+    if args.message_flow_trigger is not None and args.message_flow_margin_s is not None:
+        try:
+            trigger_ns = int(args.message_flow_trigger)
+            margin_s = float(args.message_flow_margin_s)
+            margin_ns = int(margin_s * 1e9)
+
+            # Calculate start and end timestamps in nanoseconds
+            start_ns = trigger_ns - margin_ns
+            end_ns = trigger_ns + margin_ns
+
+            # Clamp to recorded range to avoid empty clip
+            df_records = records.to_dataframe()
+            ts_min = df_records[df_records.columns[0]].min()
+            ts_max = df_records[df_records.columns[0]].max()
+
+            _logger.info(f'Using message_flow_trigger: trigger_ns={trigger_ns}, margin_s={margin_s}')
+            _logger.info(f'  Recorded range: min={ts_min}, max={ts_max}')
+            _logger.info(f'  start_ns={start_ns}, end_ns={end_ns}')
+
+            graph_short = Plot.create_message_flow_plot(
+                target_path,
+                start_ns=start_ns,
+                end_ns=end_ns,
+                trigger_ns=trigger_ns
+            ).figure(full_legends=True)
+        except Exception as e:
+            _logger.warning(f'Failed to process message_flow_trigger: {e}. Using default range.')
+    else:
+        graph_short = Plot.create_message_flow_plot(target_path,
+            lstrip_s=duration / 2,
+            rstrip_s=max(duration / 2 - (3 + 0.1), 0)).figure(full_legends=True)
     message_flow_height = 18 * len(target_path.child_names) + 50
     graph_short.frame_height = message_flow_height  # height doesn't work for some reasons...
     export_graph(graph_short, dest_dir, f'{target_path_name}_messageflow_short', target_path_name, with_png=False)
@@ -315,6 +344,10 @@ def parse_arg():
                         help='Start strip [sec] to load trace data')
     parser.add_argument('--end_strip', type=float, default=0.0,
                         help='End strip [sec] to load trace data')
+    parser.add_argument('--message_flow_trigger', type=float, default=None,
+                        help='Message flow trigger timestamp [nsec]')
+    parser.add_argument('--message_flow_margin_s', type=float, default=None,
+                        help='Message flow time margin [sec] around trigger')
     parser.add_argument('--sim_time', type=strtobool, default=False)
     parser.add_argument('-f', '--force', action='store_true', default=False,
                         help='Overwrite report directory')
@@ -334,6 +367,7 @@ def main():
     _logger.debug(f'target_path_json: {args.target_path_json}')
     _logger.debug(f'architecture_file_path: {args.architecture_file_path}')
     _logger.debug(f'start_strip: {args.start_strip}, end_strip: {args.end_strip}')
+    _logger.debug(f'message_flow_trigger: {args.message_flow_trigger}, message_flow_margin_s: {args.message_flow_margin_s}')
     _logger.debug(f'sim_time: {args.sim_time}')
     args.message_flow = True if args.message_flow == 1 else False
     _logger.debug(f'message_flow: {args.message_flow}')

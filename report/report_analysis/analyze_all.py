@@ -43,6 +43,14 @@ def parse_arg():
                         help='Start strip [sec] to load trace data')
     parser.add_argument('--end_strip', type=float, default=0.0,
                         help='End strip [sec] to load trace data')
+    parser.add_argument('--message_flow_start', type=int, default=None,
+                        help='Message flow x-axis start [nanosec] (unix time)')
+    parser.add_argument('--message_flow_end', type=int, default=None,
+                        help='Message flow x-axis end [nanosec] (unix time)')
+    parser.add_argument('--message_flow_trigger', type=int, default=None,
+                        help='Message flow trigger timestamp [nsec]')
+    parser.add_argument('--message_flow_margin_s', type=float, default=None,
+                        help='Message flow time margin [sec] around trigger')
     parser.add_argument('--sim_time', type=strtobool, default=False)
     parser.add_argument('--is_path_analysis_only', type=strtobool, default=False)
     parser.add_argument('-f', '--force', action='store_true', default=False,
@@ -82,6 +90,8 @@ def main():
     logger.debug(f'sub_trace_data: {args.sub_trace_data}')
     logger.debug(f'component_list_json: {args.component_list_json}')
     logger.debug(f'start_strip: {args.start_strip}, end_strip: {args.end_strip}')
+    logger.debug(f'message_flow_start: {args.message_flow_start}, message_flow_end: {args.message_flow_end}')
+    logger.debug(f'message_flow_trigger: {args.message_flow_trigger}, message_flow_margin_s: {args.message_flow_margin_s}')
     logger.debug(f'sim_time: {args.sim_time}')
     logger.debug(f'is_path_analysis_only: {args.is_path_analysis_only}')
     logger.debug(f'target_path_json: {args.target_path_json}')
