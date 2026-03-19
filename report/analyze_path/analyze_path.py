@@ -72,8 +72,27 @@ class Stats():
         self.filename_hist_worst = ''
         self.filename_timeseries_worst = ''
         self.filename_stacked_bar_worst = ''
+        self.filename_timeseries_best_window = ''
+        self.filename_hist_best_window = ''
+        self.filename_timeseries_worst_window = ''
+        self.filename_hist_worst_window = ''
         self.stacked_bar_best: dict[str, dict] = {}
         self.stacked_bar_worst: dict[str, dict] = {}
+        # Response time stats within message_flow window (if specified)
+        self.window_best_avg = '---'
+        self.window_best_std = '---'
+        self.window_best_min = '---'
+        self.window_best_max = '---'
+        self.window_best_p50 = '---'
+        self.window_best_p95 = '---'
+        self.window_best_p99 = '---'
+        self.window_worst_avg = '---'
+        self.window_worst_std = '---'
+        self.window_worst_min = '---'
+        self.window_worst_max = '---'
+        self.window_worst_p50 = '---'
+        self.window_worst_p95 = '---'
+        self.window_worst_p99 = '---'
 
     def calc_stats(self, df_best: np.ndarray, df_worst: np.ndarray):
         self.best_avg = round(float(np.average(df_best)), 3)
@@ -93,6 +112,27 @@ class Stats():
             self.worst_p50 = round(float(np.quantile(df_worst, 0.5)), 3)
             self.worst_p95 = round(float(np.quantile(df_worst, 0.95)), 3)
             self.worst_p99 = round(float(np.quantile(df_worst, 0.99)), 3)
+
+    def calc_stats_window(self, df_best: np.ndarray, df_worst: np.ndarray):
+        # Best case
+        self.window_best_avg = round(float(np.average(df_best)), 3)
+        if len(df_best) > 1:
+            self.window_best_min = round(float(np.min(df_best)), 3)
+            self.window_best_max = round(float(np.max(df_best)), 3)
+            self.window_best_std = round(float(np.std(df_best)), 3)
+            self.window_best_p50 = round(float(np.quantile(df_best, 0.5)), 3)
+            self.window_best_p95 = round(float(np.quantile(df_best, 0.95)), 3)
+            self.window_best_p99 = round(float(np.quantile(df_best, 0.99)), 3)
+
+        # Worst case
+        self.window_worst_avg = round(float(np.average(df_worst)), 3)
+        if len(df_worst) > 1:
+            self.window_worst_min = round(float(np.min(df_worst)), 3)
+            self.window_worst_max = round(float(np.max(df_worst)), 3)
+            self.window_worst_std = round(float(np.std(df_worst)), 3)
+            self.window_worst_p50 = round(float(np.quantile(df_worst, 0.5)), 3)
+            self.window_worst_p95 = round(float(np.quantile(df_worst, 0.95)), 3)
+            self.window_worst_p99 = round(float(np.quantile(df_worst, 0.99)), 3)
 
     def store_filename(self, target_path_name: str, save_long_graph: bool):
         if save_long_graph:
@@ -174,7 +214,7 @@ def analyze_path(args, dest_dir: str, arch: Architecture, app: Application, targ
     _logger.info(f'Processing: {target_path_name}')
     target_path = app.get_path(target_path_name)
 
-    # Include the first and last callback if availble
+    # Include the first and last callback if available
     target_path.include_first_callback = include_first_last_callback[target_path_name][0]
     target_path.include_last_callback = include_first_last_callback[target_path_name][1]
     records = target_path.to_records()
@@ -192,6 +232,7 @@ def analyze_path(args, dest_dir: str, arch: Architecture, app: Application, targ
         _logger.warning(f'    No-traffic and No-input in the path: {target_path_name}')
         return stats
 
+    window_range = None
     # Handle message_flow_trigger and message_flow_margin_s
     if args.message_flow_trigger is not None and args.message_flow_margin_s is not None:
         try:
@@ -207,17 +248,26 @@ def analyze_path(args, dest_dir: str, arch: Architecture, app: Application, targ
             df_records = records.to_dataframe()
             ts_min = df_records[df_records.columns[0]].min()
             ts_max = df_records[df_records.columns[0]].max()
+            clamped_start = max(start_ns, ts_min)
+            clamped_end = min(end_ns, ts_max)
 
             _logger.info(f'Using message_flow_trigger: trigger_ns={trigger_ns}, margin_s={margin_s}')
             _logger.info(f'  Recorded range: min={ts_min}, max={ts_max}')
             _logger.info(f'  start_ns={start_ns}, end_ns={end_ns}')
 
-            graph_short = Plot.create_message_flow_plot(
-                target_path,
-                start_ns=start_ns,
-                end_ns=end_ns,
-                trigger_ns=trigger_ns
-            ).figure(full_legends=True)
+            if clamped_start >= clamped_end:
+                _logger.warning('  Trigger window is outside data range; using default range for message_flow.')
+                graph_short = Plot.create_message_flow_plot(target_path,
+                    lstrip_s=duration / 2,
+                    rstrip_s=max(duration / 2 - (3 + 0.1), 0)).figure(full_legends=True)
+            else:
+                window_range = (clamped_start, clamped_end)
+                graph_short = Plot.create_message_flow_plot(
+                    target_path,
+                    start_ns=clamped_start,
+                    end_ns=clamped_end,
+                    trigger_ns=trigger_ns
+                ).figure(full_legends=True)
         except Exception as e:
             _logger.warning(f'Failed to process message_flow_trigger: {e}. Using default range.')
     else:
@@ -260,8 +310,76 @@ def analyze_path(args, dest_dir: str, arch: Architecture, app: Application, targ
             except Exception as e:
                 _logger.warning(f'    Failed to create stacked bar graph: {target_path_name}, {case_str}')
                 _logger.warning(str(e))
-        stats.calc_stats(df_response_time['best'].iloc[:, 1], df_response_time['worst'].iloc[:, 1])
+
+        # Calculate stats for full trace data
+        if (len(df_response_time['best']) > 0 and df_response_time['best'].shape[1] > 1 and
+            len(df_response_time['worst']) > 0 and df_response_time['worst'].shape[1] > 1):
+            stats.calc_stats(df_response_time['best'].iloc[:, 1].values, df_response_time['worst'].iloc[:, 1].values)
+            _logger.debug(f'  Full trace stats calculated: best_len={len(df_response_time["best"])}, worst_len={len(df_response_time["worst"])}')
+        else:
+            _logger.warning(f'  Insufficient data for full trace stats: best_shape={df_response_time["best"].shape}, worst_shape={df_response_time["worst"].shape}')
+
         stats.calc_stats_stacked_bar(df_stacked_bar['best'], df_stacked_bar['worst'])
+
+        # Windowed response time stats (same range as message_flow window)
+        if window_range is not None:
+            start_ns_window, end_ns_window = window_range
+            try:
+                df_response_time_window = {}
+                for case_str in ['best', 'worst', 'all']:
+                    plot_timeseries = Plot.create_response_time_timeseries_plot(
+                        target_path, case=case_str,
+                        start_ns=start_ns_window, end_ns=end_ns_window
+                    )
+                    fig_timeseries = plot_timeseries.figure(full_legends=False, xaxis_type=xaxis_type)
+                    df_response_time_window[case_str] = plot_timeseries.to_dataframe(xaxis_type=xaxis_type)
+
+                    # Clip manually in case start_ns/end_ns are ignored inside Plot
+                    ts_col = df_response_time_window[case_str].columns[0]
+                    before_shape = df_response_time_window[case_str].shape
+                    df_response_time_window[case_str] = df_response_time_window[case_str][
+                        (df_response_time_window[case_str][ts_col] >= start_ns_window) &
+                        (df_response_time_window[case_str][ts_col] <= end_ns_window)
+                    ]
+                    _logger.debug(
+                        f'    window {case_str}: orig_shape={before_shape}, '
+                        f'clipped_shape={df_response_time_window[case_str].shape}, '
+                        f'columns={df_response_time_window[case_str].columns.tolist()}'
+                    )
+                    fig_hist = Plot.create_response_time_histogram_plot(
+                        target_path, case=case_str,
+                        start_ns=start_ns_window, end_ns=end_ns_window
+                    ).figure(full_legends=False, xaxis_type=xaxis_type)
+                    fig_timeseries.y_range.start = 0
+                    fig_timeseries.legend.visible = False
+                    fig_hist.legend.visible = False
+                    fig_timeseries.frame_width = 500
+                    fig_timeseries.frame_height = 320
+                    fig_hist.width = 600
+                    fig_hist.height = 400
+                    export_graph(fig_timeseries, dest_dir, target_path_name + f'_timeseries_{case_str}_window', target_path_name, with_png=False)
+                    export_graph(fig_hist, dest_dir, target_path_name + f'_hist_{case_str}_window', target_path_name, with_png=False)
+
+                # Check if data is available before calculating stats
+                if (len(df_response_time_window['best']) > 0 and df_response_time_window['best'].shape[1] > 1 and
+                    len(df_response_time_window['worst']) > 0 and df_response_time_window['worst'].shape[1] > 1):
+                    stats.calc_stats_window(df_response_time_window['best'].iloc[:, 1].values, df_response_time_window['worst'].iloc[:, 1].values)
+                    _logger.debug(f'    Window stats calculated')
+                else:
+                    _logger.warning(f'    Insufficient data for windowed stats: best_shape={df_response_time_window["best"].shape}, worst_shape={df_response_time_window["worst"].shape}')
+
+                # Store windowed filenames
+                for case_str in ['best', 'worst']:
+                    if case_str == 'best':
+                        stats.filename_timeseries_best_window = f'{target_path_name}_timeseries_best_window'
+                        stats.filename_hist_best_window = f'{target_path_name}_hist_best_window'
+                    else:
+                        stats.filename_timeseries_worst_window = f'{target_path_name}_timeseries_worst_window'
+                        stats.filename_hist_worst_window = f'{target_path_name}_hist_worst_window'
+
+            except Exception as e:
+                _logger.warning(f'    Failed to calculate windowed response time: {target_path_name}')
+                _logger.warning(str(e))
 
     stats.store_filename(target_path_name, args.message_flow)
     _logger.info(f'---{target_path_name}---')

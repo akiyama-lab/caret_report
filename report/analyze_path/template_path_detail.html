@@ -103,6 +103,50 @@
         </table>
       </div>
 
+      {% if (message_flow_start is not none or message_flow_end is not none or message_flow_trigger is not none) and path_info.window_best_avg != '---' %}
+      <h5>Response Time (Message Flow Window)</h5>
+      <div class="w-75">
+        <table class="table table-hover table-bordered" style="word-break: break-word">
+          <thead>
+            <tr class="table-primary text-center">
+              <th>{{ path_info.target_path_name}} (window)</th>
+              <th>Avg [ms]</th>
+              <th>Median [ms]</th>
+              <th>Min [ms]</th>
+              <th>95%ile [ms]</th>
+              <th>99%ile [ms]</th>
+              <th>Max [ms]</th>
+              <th>Std [ms]</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Response Time (best)</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_avg if path_info.window_best_avg != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_p50 if path_info.window_best_p50 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_min if path_info.window_best_min != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_p95 if path_info.window_best_p95 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_p99 if path_info.window_best_p99 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_max if path_info.window_best_max != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_best_std if path_info.window_best_std != '---' else '---' }}</td>
+            </tr>
+            {% if display_worst == true %}
+            <tr>
+              <td>Response Time (worst)</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_avg if path_info.window_worst_avg != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_p50 if path_info.window_worst_p50 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_min if path_info.window_worst_min != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_p95 if path_info.window_worst_p95 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_p99 if path_info.window_worst_p99 != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_max if path_info.window_worst_max != '---' else '---' }}</td>
+              <td class="text-end">{{ '%0.3f' % path_info.window_worst_std if path_info.window_worst_std != '---' else '---' }}</td>
+            </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+
       {% if display_worst == true %}
       <p>Note: "Response Time (worst)" includes the worst external input latency</p>
       {% endif %}
@@ -114,12 +158,18 @@
           {% else %}
           <iframe src="{{ path_info.filename_timeseries_best }}.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
           {% endif %}
+          {% if (message_flow_start is not none or message_flow_end is not none or message_flow_trigger is not none) and path_info.filename_timeseries_best_window != '' %}
+          <iframe src="{{ path_info.filename_timeseries_best_window }}.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          {% endif %}
         </div>
         <div class="col">
           {% if display_worst == true %}
           <iframe src="{{ path_info.filename_hist_worst }}.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
           {% else %}
           <iframe src="{{ path_info.filename_hist_best }}.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
+          {% endif %}
+          {% if (message_flow_start is not none or message_flow_end is not none or message_flow_trigger is not none) and path_info.filename_hist_best_window != '' %}
+          <iframe src="{{ path_info.filename_hist_best_window }}.html" frameborder="0" width="620" height="420" scrolling="yes"></iframe>
           {% endif %}
         </div>
       </div>
